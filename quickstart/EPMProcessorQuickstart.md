@@ -134,7 +134,7 @@ Uma **Application** é uma configuração de como um método vai ser executado. 
 5. Clique em **NEW APPLICATION**.
 6. Preencha os campos conforme a imagem a seguir e clique em **Save**.
 
-![application](./images/application.png)
+![application](./images/application.PNG)
 
 ## Solutions
 
@@ -146,7 +146,7 @@ As **Solutions** servem para organizar as soluções implementadas sobre aplica�
 4. Clique em **Editar** para abrir a visualização de **Simulations** e **Productions**.
 5. Em **Productions**, clique em **NEW**, preencha os campos e clique em **Save**. Utilize a **EPM Connection** criada anteriormente e um evento relacionado.
 
-![new production](./images/new_production.png)
+![new production](./images/new_production.PNG)
 
 A **Production** foi criada mas ainda não está em modo **Play**. O modo **Play** corresponde ao estado onde a rotina a ser executada aguarda pela chegada de um evento que dispare o início de sua execução.
 
