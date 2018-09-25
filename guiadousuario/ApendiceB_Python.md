@@ -1,0 +1,59 @@
+## Apêndia B - Dicas Python
+
+[Retornar ao menu](menu.md)
+
+### Acessando Packages "Globais"
+
+É possível criar métodos em Packages acessíveis por outros Packages dentro do EPM Processor. Para isso é preciso seguir um desses dois métodos:
+
+* Fazer o *import* do Package dentro do método decorado, por exemplo:
+
+```python
+
+import epmprocessor as epr
+
+@epr.applicationMethod('MyMethod')
+def my_method(session, param1):    
+	import mypackage	
+	...
+
+```
+
+* Fazer o *append* do local onde o **EPM Processor** salva os Packages:
+
+```python
+
+import epmprocessor as epr
+
+import sys
+
+sys.path.append('C:\ProgramData\Elipse Software\EpmProcessor\EpmProcessorPyEngine\Package')
+
+import mypackage
+
+@epr.applicationMethod('MyMethod')
+def my_method(session, param1):
+	...
+    
+	
+
+```
+### Convertendo para Pandas 
+
+Para converter o ndarray do EPM para o DataFrame do Pandas, siga este exemplo:
+
+```python
+import pandas as pd
+
+def epm2pandas(epmdata):
+    """Transform epm ndarray(value, timestamp, quality) in pandas dataframe"""
+    
+    df = pd.DataFrame(
+            {'Value': epmdata['Value'].tolist(),
+             'Timestamp': epmdata['Timestamp'].tolist(),
+             'Quality': epmdata['Quality'].tolist()}
+            )
+
+    return df
+```
+
