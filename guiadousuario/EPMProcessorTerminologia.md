@@ -1,113 +1,85 @@
-# EPM Processor - Terminologia
+# EPM Processor: Terminologia
 
+*[Retornar ao menu](menu.md)*
 
-[Retornar ao menu](menu.md)
+Este tópico contém uma lista, em ordem alfabética, com a descrição de diversos termos utilizados neste Manual.
 
-Lista organizada em ordem alfabética. Contém a descrição de diversos termos utilizados neste manual. 
+## Application
 
+Configuração básica para a execução de um método. As **Applications** são organizadas em grupos para facilitar sua localização e gerenciamento, consistindo basicamente nas definições de valores padrão para os parâmetros do método que representam. Consulte o tópico *[Applications](EPMProcessorApplications.md)* para mais informações.
 
-#### Application
+## Application Method
 
-Configuração básica para a execução de um método.
-As *Applications* são organizadas em grupos para facilitar sua localização e gerenciamento, consistindo basicamente nas definições de valores padrões para os parâmetros do método ao qual representa. Mais informações podem ser obtidas diretamente no tópico [Applications](EPMProcessorApplications.md).
+Corresponde à implementação em linguagem **Python** de uma função, identificada através de um _decorator_, como sendo um método passível de execução de uma **Application**.
 
+## Code Package
 
-#### Application Method
+Corresponde a um conjunto de códigos escritos em linguagem **Python** contendo as instruções que podem ser utilizadas posteriormente nas aplicações. Um **Code Package** deve ser empacotado através das operações de **Deploy** ou **Deploy++**, quando passa a ser denominado simplesmente de **Package**. Consulte o tópico *[Code Packages](EPMProcessorCodePackages.md)* para mais informações.
 
-Corresponde à implementação em linguagem Python de uma função identificada através de um *decorator* como sendo um método passível de execução de uma *Application*.
+## Deploy
 
+É a operação de empacotamento de um **Code Package** para criar um **Package**. Consulte o tópico *[Code Packages - Deploy e Deploy++](EPMProcessorCodePackages.md#deploy-e-deploy-)* para mais informações.
 
-#### Code Package
+## Deploy++
 
-Corresponde a um conjunto de códigos escritos em linguagem Python contendo as instruções que poderão ser utilizadas posteriormente nas aplicações.
-O *Code Package* deverá ser "empacotado" através da operação de *Deploy* ou *Deploy++*, quando passará a ser denominado simplesmente de *Package*. Mais informações podem ser obtidas diretamente no tópico [Code Packages](EPMProcessorCodePackages.md).
+É a operação de empacotamento de um **Code Package** para gerar um **Package** binário, com maior desempenho nas execuções. Consulte o tópico *[Code Packages - Deploy e Deploy++](EPMProcessorCodePackages.md#deploy-e-deploy-)* para mais informações.
 
+## EPM Master
 
-#### Deploy
+Corresponde ao **EPM Server** responsável pelas chaves de produto e pela autenticação de usuários.
 
-É a operação de empacotamento de um *Code Package*, criando um *Package*. Mais informações podem ser obtidas diretamente no tópico [CodePck/Deploy](EPMProcessorCodePackages.md#deploy-e-deploy).
+## epmwebapi
 
+Biblioteca em linguagem **Python** para interação com objetos e dados de um **EPM Server**.
 
-#### Deploy++
+## Method
 
-É a operação de empacotamento de um *Code Package* gerando um *Package* binário, com maior desempenho nas execuções. Mais informações podem ser obtidas diretamente no tópico [CodePck/Deploy](EPMProcessorCodePackages.md#deploy-e-deploy).
+Consulte o item *[Application Method](EpmProcessorTerminologia.md#application-method)*.
 
+## Numpy
 
-#### EPM Master
+Biblioteca em linguagem **Python** para computação científica, especialmente que envolva cálculos e manipulações matriciais. Consulte a página da *[Biblioteca](https://www.numpy.org)* para mais informações.
 
-Corresponde ao *EPM Server* responsável pelas chaves do produto e autenticação de usuários.
+## Package
 
+É o resultado da operação de empacotamento de um **Code Package** para posterior utilização em uma **Application**. Consulte o tópico *[CodePackage - Deploy e Deploy++](EPMProcessorCodePackages.md#deploy-e-deploy)* para mais informações.
 
-#### epmwebapi
+## Pandas
 
-Biblioteca Python para interação com objetos e dados de um *EPM Server*.
+Biblioteca em linguagem **Python** que agiliza o processo de análise sobre dados tabulares. Consulte a página da *[Biblioteca](https://pandas.pydata.org)* para mais informações.
 
+## Production
 
-#### Method
+É a designação para uma aplicação que pode ser colocada em modo de produção, ou seja, pode ser colocada em um estado para avaliação toda vez que o evento associado seja disparado. Consulte o tópico *[Criando Productions](EPMProcessorSolutions.md#criando-productions)* para mais informações.
 
-Ver [Application Method](EpmProcessorTerminologia.md#application-method)
+## Python
 
+Linguagem de programação utilizada para a codificação das lógicas utilizadas nas **Solutions**. Consulte a página da *[Linguagem Python](https://www.python.org)* para mais informações.
 
-#### Numpy
+## Resources
 
-Biblioteca Python para computação científica, especialmente que envolvam cálculos e manipulações matriciais. Mais informações podem ser obtidas diretamente no site do módulo [Numpy](http://www.numpy.org).
+Repositório de arquivos do **EPM Processor** e do **EPM Portal**. Consulte o tópico *[Resources](EPMProcessorResources.md)* para mais informações.
 
+## Scikit-learn
 
-#### Package
+Biblioteca em linguagem **Python** para aplicações de _Machine Learning_. Consulte a página da *[Biblioteca](http://scikit-learn.org)* para mais informações.
 
-É o resultado da operação de empacotamento de um *Code Package* para posterior utilização em uma *Application*. Mais informações podem ser obtidas diretamente no tópico [CodePackage/Deploy](EPMProcessorCodePackages.md#deploy-e-deploy).
+## Scipy
 
+Biblioteca em linguagem **Python** para computação científica (otimizações, estatística, cálculo numérico, álgebra linear, etc.). Consulte a página da *[Biblioteca](https://www.scipy.org)* para mais informações.
 
+## Session
 
-#### Pandas
+Parâmetro de entrada que contém diversas informações relativas à execução de uma **Production**. Consulte o tópico *[Criando Algoritmos para o EPM Processor - Parâmetros de um Método](EPMProcessorAlgoritmos.md#par-metros-de-um-m-todo)* para mais informações.
 
-Biblioteca Python que agiliza o processo de análises sobre de dados tabulares. Mais informações podem ser obtidas diretamente no site do módulo [Pandas](https://pandas.pydata.org).
+## Simulation
 
+É a designação para uma aplicação configurada para simulações, ou seja, para avaliações segundo eventos simulados, sejam eles passados ou futuros. Consulte o tópico *[Criando Simulations](EPMProcessorSolutions.md#criando-simulations)* para mais informações.
 
-#### Production
+## Solution
 
-É a designação para uma aplicação que pode ser colocada em modo de produção, ou seja, em estado para avaliação toda vez que o evento associado a ela seja disparado. Mais informações podem ser obtidas diretamente no tópico [Criando Productions](EPMProcessorSolutions.md#criando-productions).
+É uma agrupamento que serve para organizar as soluções implementadas sobre as **Applications**, seja para colocar em produção ou em simulação. Consulte o tópico *[Solutions](EPMProcessorSolutions.md)* para mais informações.
 
+## Workbench
 
-#### Python
-
-Linguagem de programação utilizada para a codificação das lógicas utilizadas nas *Solutions*. Mais informações podem ser obtidas diretamente no site [Python](https://www.python.org).
-
-
-#### Resources
-
-Repositório de arquivos do *EPM Processor* e *EPM Portal*. Mais informações podem ser obtidas diretamente no tópico [Resources](EPMProcessorResources.md).
-
-
-#### Scikit-learn
-
-Biblioteca Python para aplicações de Machine Learning. Mais informações podem ser obtidas diretamente no site [Scikit-learn](http://scikit-learn.org).
-
-
-#### Scipy
-
-Biblioteca Python para computação científica (otimizações, estatística, cálculo numérico, álgebra linear, etc.). Mais informações podem ser obtidas diretamente no site [Scipy](https://www.scipy.org).
-
-
-#### Session
-
-Parâmetro de entrada que contém diversas informações relativas a execução de uma *Production*. Mais informações podem ser obtidas diretamente no tópico [Biblioteca do EPM Processor](EPMProcessorBibliotecaepmprocessor.md).
-
-
-#### Simulation
-
-É a designação para uma aplicação configurada para simulações, ou seja, para avaliações segundo eventos simulados, sejam eles passados ou futuros. Mais informações podem ser obtidas diretamente no tópico [Criando Simulations](EPMProcessorSolutions.md#criando-simulations).
-
-
-#### Solution
-
-É uma agrupamento que serve para organizar as soluções implementadas sobre as *Applications*, seja para colocar em produção ou simulação. Mais informações podem ser obtidas diretamente no tópico [Solutions](EPMProcessorSolutions.md).
-
-
-#### Workbench
-
-Interface Web de uso geral do *EPM Processor*. Mais informações podem ser obtidas diretamente no tópico [Workbench](EPMProcessorWorkbench.md).
-
-
-
-
+Interface _web_ de uso geral do **EPM Processor**. Consulte o tópico *[Workbench](EPMProcessorWorkbench.md)* para mais informações.

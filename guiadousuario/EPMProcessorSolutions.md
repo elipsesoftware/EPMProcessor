@@ -1,143 +1,118 @@
-## Solutions
+# Solutions
 
-[Retornar ao menu](menu.md)
+*[Retornar ao menu](menu.md)*
 
-As **Solutions** são agrupamentos que servem para organizar as soluções implementadas sobre aplicações, que podem ser colocadas em produção (eventos em tempo real) ou simuladas (eventos simulados e execução sob demanda). Desta forma, para melhor gerenciar as execuções das **Solutions**, elas foram divididas em dois grupos:
+As **Solutions** são agrupamentos que servem para organizar as soluções implementadas sobre aplicações, que podem ser colocadas em produção (eventos em tempo real) ou simuladas (eventos simulados e execução sob demanda). Desta forma, para melhor gerenciar as execuções, as **Solutions** são divididas em dois grupos:
 
-* **Simulation** - São gerados eventos simulados e a aplicação pode ser executada em diferentes períodos de tempo. Por exemplo: Rodar uma dada aplicação para cada um dos últimos 12 meses.
++ **Simulation**: São gerados eventos simulados e a aplicação pode ser executada em diferentes períodos de tempo, como por exemplo executar uma aplicação para cada um dos últimos 12 meses.
 
-* **Production** - Os eventos que iniciarão a execução de uma dada aplicação são gerados em tempo real a partir de um **EPM Server**. Por exemplo: O método rodará todo dia 01 do mês às 00:01.
++ **Production**: Os eventos que iniciam a execução de uma aplicação são gerados em tempo real a partir de um **EPM Server**, como por exemplo um método que executa todo primeiro dia do mês às 00:01.
 
-A criação e configuração dos eventos de um dado **EPM Server** é toda realizada, monitorada e gerenciada a partir do **EPM Studio**. Veja a seção **EPM Events** no manual do EPM para mais informações.
+A criação e configuração dos eventos de um **EPM Server** é realizada, monitorada e gerenciada a partir do **EPM Studio**. Consulte o tópico **EPM Events** do **Manual do Usuário do EPM** para mais informações.
 
-Para visualizar e criar novas **Solutions**:
+Para visualizar e criar novas **Solutions**, clique em **Solutions** no menu lateral para mostrar as opções descritas na tabela a seguir.
 
-1. No menu lateral clique em **Solutions**.
-2. Será mostrada a lista de **Solutions** disponíveis.
-
-Os ícones da lista possuem as seguintes funções:
-
-
-|Ícone|Descrição|
+|Opção|Descrição|
 |:---:|---|
-|![pencil icon](./images/fa_pencil_icon_18.PNG)|Edita a Solution|
-|![copy icon](./images/fa_copy_icon_18.png)|Cria uma cópia com nome diferente|
-|![trash icon](./images/fa_trash_icon_18.png)|Exclui a Solution|
+|![pencil icon](./images/fa_pencil_icon_18.PNG "Editar")|Edita uma **Solution**|
+|![copy icon](./images/fa_copy_icon_18.png "Copiar")|Cria uma cópia da **Solution** com um nome diferente|
+|![trash icon](./images/fa_trash_icon_18.png "Excluir")|Exclui uma **Solution**|
 
-3. Clique em New.
-4. Escolha o nome e a descrição da Solution.
-5. Para editar a Solution clique no ícone "lápis".
-6. O sumário da **Solution** é mostrado. 
+Para criar uma nova **Solution**, siga estes procedimentos.
 
-O menu da **Solution** possui os itens *Edit*, *Delete* e *Permissions*. Este menu tem as mesmas funções da **Application**.
+1. Clique em **New**.
+2. Digite um nome e uma descrição para a **Solution**.
+3. Para editar a **Solution**, clique em ![pencil icon](./images/fa_pencil_icon_18.PNG "Editar").
 
-Também são mostrados os menus **New** e **View All** para **Simulations** e **Productions**. Através destes é possível, respectivamente, criar um novo ou visualizar a lista itens disponíveis.
+As opções de edição de uma **Solution** são **Edit**, **Delete** e **Permissions**. Estas opções são as mesmas de uma **Application**.
 
+Também são mostradas as opções **New** e **View All** para **Simulations** e **Productions**. Através destas opções é possível, respectivamente, criar novas **Simulations** e **Productions** ou visualizar as **Simulations** e **Productions** disponíveis.
 
-### Criando Simulations
+## Criando Simulations
 
-Para criar uma nova **Simulation**:
+Para criar uma nova **Simulation**, clique em **New** para abrir a janela da figura a seguir.
 
-1. Na visualização de Simulations clique em New.
+![new simulation](./images/solutions_new_simulation.png "Criação de uma nova Simulation")
 
-![new simulation](./images/solutions_new_simulation.png)
+A tabela a seguir descreve as opções da janela anterior.
 
-A tabela a seguir descreve os itens da janela acima.
-
-|Item| Descrição|
+|Opção| Descrição|
 |---|---|
-|Name|Nome da Simulation|
-|Solution|A qual Solution a nova Simulation deverá pertencer|
-|Application Groups|Em qual Application Group se encontra a Application requerida|
-|Application|Qual Application deverá ser colocada na Simulation|
-|Start|Data/hora de ínicio da simulação|
-|End|Data/hora do fim da simulação|
-|Count|Intervalo de execução, relacionado a Unit|
-|Unit|Unidade do Intervalo de execução|
-|Is Period| Se marcado, executa o método somente em data/horas específicas definidos nos campos abaixo|
-|Select Date and Time|Seleciona uma data e hora no calendário|
-|Add to Dates|Inclui o data/hora selecionada na sequência de execuções|
-|Execute in Dates|Data/hora em que a simulação será executada|
+|**Name**|Nome da **Simulation**|
+|**Solution**|Indica a qual **Solution** esta **Simulation** deve pertencer|
+|**Application Groups**|Indica em qual **Application Group** se encontra a **Application** requerida|
+|**Application**|Indica qual **Application** deve ser colocada nesta **Simulation**|
+|**Start**|Data e hora de início da simulação|
+|**End**|Data e hora de término da simulação|
+|**Count**|Intervalo de execução|
+|**Unit**|Unidade do intervalo de execução definido na opção **Count**|
+|**Is Period**|Se esta opção estiver selecionada, executa o método somente em datas e horas específicas definidas nas opções a seguir|
+|**Select Date and Time**|Seleciona uma data e hora no calendário|
+|**Add to Dates**|Inclui a data e hora selecionada na sequência de execuções|
+|**Execute in Dates**|Data e hora em que a simulação é executada|
 
-* Exemplo de configuração: 
+### Exemplo de Configuração
 
- ![exemplo de configuracao](./images/solutions_simulation_example.PNG)
- 
- Na configuração acima, serão gerados 30 eventos. Pois o intervalo é de 30 dias, e a unidade e contagem é 1 dia.
+ ![exemplo de configuracao](./images/solutions_simulation_example.PNG "Exemplo de configuração")
 
+ Na configuração da figura anterior são gerados 30 eventos, pois o intervalo é de 30 dias e a unidade e contagem é de 1 (um) dia. Para esta configuração, execute os procedimentos a seguir.
 
-2. Clique em Save.
-3. Na lista de Simulations, clique no ícone "lápis" para abrir a visualização.
-4. Clique no Botão Execute para iniciar a execução do método.
-5. Aguarde o término para ver o resultado.
+1. Clique em **Save**.
+2. Na lista de **Simulations**, clique em ![pencil icon](./images/fa_pencil_icon_18.PNG "Editar") para abrir a visualização.
+3. Clique em **Execute** para iniciar a execução do método.
+4. Aguarde o término da execução para visualizar o resultado.
 
+## Criando Productions
 
-### Criando Productions
+Para criar uma nova **Production**, clique em **New** na visualização de **Productions**, conforme a figura a seguir.
 
-Para criar uma nova **Production**:
+![new simulation](./images/solutions_new_production.png "Janela de criação de Productions")
 
-1. Na visualização de Productions clique em New.
+A tabela a seguir descreve as opções da figura anterior.
 
-![new simulation](./images/solutions_new_production.png)
-
-A tabela a seguir descreve os itens da janela acima.
-
-|Item| Descrição|
+|Opção| Descrição|
 |---|---|
-|Name|Nome da Production|
-|Solution|A qual Solution a nova Production deverá pertencer|
-|Application Groups|Em qual Application Group se encontra a Application requerida|
-|Application|Qual Application deverá ser colocada na Production|
-|Connections|Connection com o EPM Server da qual se deseja utilizar o evento|
-|Events|Nome do evento utilizado para disparar a execução do algoritmo|
-|Enable Retries on Erros|Se marcado, habilita as retentativas de execução em caso de erro|
-|Abort Retries on new Event|Se marcado, não faz retentativas da execução anterior se um evento novo ocorreu|
-|Retries| Número de retentativas em caso de erro|
-|Wait Time|Intervalo de tempo entre as retentativas|
+|**Name**|Nome da **Production**|
+|**Solution**|Indica a qual **Solution** esta **Production** deve pertencer|
+|**Application Groups**|Indica em qual **Application Group** se encontra a **Application** requerida|
+|**Application**|Indica qual **Application** deve ser colocada nesta **Production**|
+|**Connections**|Indica a **Connection** com o **EPM Server** da qual se deseja utilizar o evento|
+|**Events**|Nome do evento utilizado para disparar a execução do algoritmo|
+|**Enable Retries on Errors**|Se esta opção estiver selecionada, as retentativas de execução em caso de erro são habilitadas|
+|**Abort Retries on new Event**|Se esta opção estiver selecionada, retentativas da execução anterior caso um evento novo ocorra não são executadas|
+|**Retries**|Número de retentativas em caso de erro|
+|**Wait Time**|Intervalo de tempo entre as retentativas|
 
-2. Preencha os campos conforme a necessidade.
-3. Clique em Save.
+Preencha os campos conforme a necessidade e clique em **Save**.
 
-#### Visualizando e editando Productions
+### Visualizando e Editando Productions
 
-Para abrir a visualização e edição de **Productions**
+Para visualizar e editar **Productions**, clique em **Solutions** no menu lateral e clique em ![pencil icon](./images/fa_pencil_icon_18.PNG "Editar") para abrir uma **Solution**. Na seção **Productions**, clique em **View All**. A tabela a seguir contém a descrição das opções disponíveis para **Productions**.
 
-1. No menu lateral esquerdo clique em **Solutions**.
-2. Clique no ícone "Lápis" para abrir a Solution desejada.
-3. Na seção de Productions clique em **View All**.
-
-A tabela abaixo detalha cada um dos ícones disponíveis na tabela.
-
-
-
-|Ícone|Descrição|
+|Opção|Descrição|
 |:---:|---|
-|![pencil icon](./images/fa_pencil_icon_18.PNG)|Abre a visualização e edição da Production|
-|![copy icon](./images/fa_copy_icon_18.png)|Cria uma cópia com nome diferente|
-|![trash icon](./images/fa_trash_icon_18.png)|Exclui a Production|
-|![play icon](./images/fa_play_icon_18.png)|Inicia ou para a execução|
+|![pencil icon](./images/fa_pencil_icon_18.PNG "Editar")|Abre a visualização e edição da **Production** selecionada|
+|![copy icon](./images/fa_copy_icon_18.png "Copiar")|Cria uma cópia da **Production** selecionada com um nome diferente|
+|![trash icon](./images/fa_trash_icon_18.png "Excluir")|Exclui a **Production** selecionada|
+|![play icon](./images/fa_play_icon_18.png "Iniciar ou Parar")|Inicia ou para a execução da **Production** selecionada|
 
+Para abrir a visualização de uma **Production**, clique em ![pencil icon](./images/fa_pencil_icon_18.PNG "Editar"). A janela de visualização contém as abas a seguir:
 
-4. Clique no ícone "lápis" para abrir a visualização da **Production**.
++ **Results**: Visualização do resultado da execução da **Production**. Filtre por data para localizar o resultado de execuções.
++ **App Config**: Edição da **Production** em relação à **Application**. É possível alterar os valores padrão inseridos na configuração da **Application**.
++ **Execution Config**: Permite alterar o evento que dispara a execução da **Production** e configurar as retentativas em caso de erro.
++ **Statistics**: Mostra as estatísticas gerais de execução. Consulte a tabela a seguir para mais informações.
 
-Essa visualização possui quatro abas:
-
-* **Results** - Visualização do resultado da execução da **Production**. Filtro por data para localizar o resultado de execuções.
-* **App Config** - Edição da **Production** em relação a **Application**. É possível alterar os valores "padrão" inseridos na configuração da **Application**.
-* **Execution Config** - Permite alterar o evento que dispara a execução da **Production** e configurar as retentativas em caso de erro.
-* **Statistics** - Estatísticas gerais de execução. Veja a tabela a seguir:
-
-|Valor|Descrição|
+|Opção|Descrição|
 |---|----|
-|Min Exec. Time|Menor tempo de execução do método|
-|Max Exec. Time|Maior tempo de execução do método|
-|Average Exec. Time| Média de tempo de execução dos métodos|
-|Standard Deviation Exec. Time| Desvio padrão de tempo de execução dos métodos|
-|Total Executions|Quantidade total de execuções|
-|Total Fails|Quantidade total de execuções com falha|
-|Retries Count| Quantidade total de retentativas |
-|Status Last Execution| Status da última execução| 
-|Last State Change| Última alteração na configuração| 
+|**Min Exec. Time**|Menor tempo de execução do método|
+|**Max Exec. Time**|Maior tempo de execução do método|
+|**Average Exec. Time**|Média do tempo de execução dos métodos|
+|**Standard Deviation Exec. Time**|Desvio padrão do tempo de execução dos métodos|
+|**Total Executions**|Quantidade total de execuções|
+|**Total Fails**|Quantidade total de execuções com falha|
+|**Retries Count**|Quantidade total de retentativas|
+|**Status Last Execution**|Status da última execução|
+|**Last State Change**|Última alteração na configuração|
 
-
-[Próxima seção - Algoritmos](EPMProcessorAlgoritmos.md)
+*[Próxima Seção: Algoritmos](EPMProcessorAlgoritmos.md)*

@@ -1,46 +1,38 @@
-# EPM Webserver - Guia de instalação
+# Guia de Instalação do EPM Webserver
 
-Data:06/08/2018
+Data: 26/09/2018
 
 Versão: 0.1
 
-
 ## Introdução
 
-O **EPM Webserver** é um módulo do sistema **EPM** que provê acesso a um dado **EPM Server** através de um API RESTful.
+O **EPM Webserver** é um módulo do sistema **EPM** que provê acesso a um **EPM Server** através de uma API **RESTful**.
 
-Este módulo é pré-requisito para os seguintes módulos do sistema EPM: **EPM Portal** e **EPM Processor**.
+Este módulo é pré-requisito para os módulos **EPM Portal** e **EPM Processor** do sistema **EPM**.
 
-### Pré-requisitos
+## Pré-requisitos
 
-* Windows 7 SP1 ou superior
-* Windows Server 2008 R2 SP1 ou superior
-* EPM Server 3.5 ou superior
-* .NET 4.7.1 ou superior
++ **Windows 7 SP1** ou superior
++ **Windows Server 2008 R2 SP1** ou superior
++ **EPM Server** 3.5 ou superior
++ **Framework .NET** 4.7.1 ou superior
 
 ## Instalação e Configuração
 
+1. Inicie a instalação aceitando os termos de contrato e seguindo a sequência de avançar (**Next**) até o final.
 
-Inicie a instalação, aceitando os termos de contrato e seguindo a sequência de avançar (“Next”) até o final.
+![instalacao1](images/webserver_instalacao1.PNG "Instalador do EPM Webserver")
 
+2. Ao finalizar a instalação, o ícone do **EPM Webserver** ![epm webserver icon](./images/webserver_icon.PNG "EPM Webserver") aparece na Área de Notificações do Windows.
 
-![instalacao1](images/webserver_instalacao1.PNG)
+3. Clique com o botão direito do mouse no ícone do **EPM Webserver** e selecione a opção **Settings**.
 
-Ao finalizar a instalação o ícone do **EPM Webserver** aparecerá na bandeja do Windows.
+![abrir Settings](images/webserver_menu.PNG "Menu contextual do EPM Webserver")
 
-![epm webserver icon](./images/webserver_icon.PNG)
+4. Na janela que se abre, selecione a aba **EPM Server Settings** e digite o endereço, usuário e senha do **EPM Server**.
 
-Clique com o botão direito no ícone e escolha a opção **Settings**.
+5. Clique em **Apply** e aguarde o término da configuração.
 
-![abrir Settings](images/webserver_menu.PNG)
+![EPM Server Settings](images/webserver_configuracao.PNG "Aba EPM Server Settings")
 
-Na janela que abriu, escolha  **EPM Server Settings** e insira o endereço, usuário e senha do EPM Server, clique em **Apply** e aguarde o término da configuração.
-
-![EPM Server Settings](images/webserver_configuracao.PNG)
-
-Clique em **OK** para fechar a janela.
-
-
-
-
-
+6. Clique em **OK** para fechar esta janela.

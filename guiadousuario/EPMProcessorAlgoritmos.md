@@ -1,45 +1,45 @@
-## Criando Algoritmos para o EPM Processor
+# Criando Algoritmos para o EPM Processor
 
-[Retornar ao menu](menu.md)
+*[Retornar ao menu](menu.md)*
 
-**Sessões:**
+## Tópicos neste Capítulo
 
++ *[Leitura de Dados](EPMProcessorAlgoritmos.md#leitura-de-dados-de-data-objects)*
 
-[**Leitura de Dados**](EPMProcessorAlgoritmos.md#leitura-de-dados)
++ *[Escrita de Dados](EPMProcessorAlgoritmos.md#escrita-de-dados-em-uma-basic-variable)*
 
-[**Escrita de Dados**](EPMProcessorAlgoritmos.md#escrita-de-dados)
++ *[Resources](EPMProcessorAlgoritmos.md#acesso-aos-resources)*
 
-[**Objetos do DataModel**](EPMProcessorAlgoritmos.md#objetos-do-datamodel)
++ *[Objetos do Elipse Data Model](EPMProcessorAlgoritmos.md#objetos-do-elipse-data-model-aplica-es-do-e3-ou-elipse-power-)*
 
-[**Resources**](EPMProcessorAlgoritmos.md#acesso-aos-resources)
++ *[Contexto de Execução](EPMProcessorAlgoritmos.md#contexto)*
 
-[**Contexto de Execução**](EPMProcessorAlgoritmos.md#contexto)
+## Introdução
 
-### Introdução
+Quando se deseja implementar um algoritmo para ser utilizado no **EPM Processor**, seja em produção ou simulação, este algoritmo deve ser codificado dentro de uma função em linguagem **Python** que, neste caso, é designada por **Application Method**, ou simplesmente de **Method** (*método*, em português).
 
-Quando se deseja implementar um algoritmo para ser utilizado no **EPM Processor**, seja em produção ou simulação, o mesmo deverá ser codificado dentro de uma função em linguagem Python que, neste caso, será designada por **Application Method**, ou simplesmente de **Method** <sup>1</sup> (método em português).
-Para que uma função seja apresentada como um método do **EPM Processor** nas configurações das **Applications**, é necessário que a mesma seja identificada como tal, isso é feito através do uso de um *decorator* <sup>2</sup>, a ser visto mais adiante.
+> + O termo _método_ advém do paradadigma de programação orientada a objetos, onde se refere à uma função definida em uma classe específica.
 
-Veja o fluxo de criação e utilização de um método para aplicações no **EPM Processor**:
+Para que uma função seja apresentada como um método do **EPM Processor** nas configurações das **Applications**, é necessário que esta função seja identificada como tal. Isto é realizado através do uso de um *decorator*, a ser visto mais adiante.
 
-![fluxo algoritmo](./images/algoritmos_fluxo.PNG)
+> + _Decorator_ é um termo que designa um padrão de projeto de software que permite agregar dinamicamente funcionalidades adicionais a um dado objeto.
 
+A imagem a seguir mostra o fluxo de criação e utilização de um método para aplicações no **EPM Processor**.
 
+![fluxo algoritmo](./images/algoritmos_fluxo.PNG "Fluxo de criação e utilização de métodos no EPM Processor")
 
-Existem duas bibliotecas que sempre devem ser importadas no código, uma do próprio **EPM Processor** e outra para acessar informações e dados de um **EPM Server**:
+Existem duas bibliotecas que sempre devem ser importadas no código, uma do próprio **EPM Processor** e outra para acessar informações e dados de um **EPM Server**, conforme o código a seguir.
 
 `import epmprocessor as epr`
 
 `import epmwebapi as epm`
- 
-Essas bibliotecas provém todas as funcionalidades que veremos a seguir:
 
-**O decorator *@epr.applicationMethod()***
+Estas bibliotecas proveem todas as funcionalidades utilizadas nos exemplos a seguir.
 
-Esse *decorator* deverá ser utilizado em todas as funções Python que serão expostas como métodos para utilização nas **Applications**.
+## O Decorator epr.applicationMethod
 
+Este _decorator_ deve ser utilizado em todas as funções em linguaguem **Python** expostas como métodos para utilização nas **Applications**, como no exemplo a seguir.
 
-Por exemplo:
 ```python
 import epmprocessor as epr
 import epmwebapi as epm
@@ -47,14 +47,14 @@ import epmwebapi as epm
 @epr.applicationMethod('MyMethod')
 def my_method(session, param1, param2):
     '''Documentation'''
-    
+
     ...
 ```
 
-No exemplo acima, foi utilizado o parâmetro *session*. Este parâmetro deverá sempre receber o tipo *session* na entrada de dados do método. 
-Através dele são acessíveis informações relativas ao evento, contexto de execução, informações sobre a última execução, etc.
+No exemplo anterior foi utilizado o parâmetro `session`. Este parâmetro deve sempre receber o tipo **session** na entrada de dados do método. Através deste parâmetro são acessíveis informações relativas ao evento, contexto de execução e informações sobre a última execução, entre outras.
 
-O exemplo abaixo mostra o uso das propriedades *timeEvent* e *range* do parâmetro *session* para trabalhar com o período de uma consulta, relativo ao momento em que o método foi executado.
+O exemplo a seguir mostra o uso das propriedades `timeEvent` e `range` do parâmetro `session` para trabalhar com o período de uma consulta relativo ao momento em que o método é executado.
+
 ```python
 import epmprocessor as epr
 import epmwebapi as epm
@@ -62,69 +62,64 @@ import datetime
 
 @epr.applicationMethod('MyMethod')
 def my_method(session, param1, param2):
-    
+
     endtime = session.timeEvent
     initime = endtime - datetime.timedelta(session.range)
-    
+
     queryPeriod = epm.QueryPeriod(initime,endtime)
 
     pass
 ```
 
-Lista de propriedades do parâmetro **session**:
+A tabela a seguir contém a descrição das propriedades do parâmetro `session`.
 
 |Propriedade|Descrição|
 |---|---|
-|timeEvent|Data/hora do evento que gerou a execução do método. Pode ser informado manualmente em caso de teste, em tempo real no caso de uma **Production** ou simulado no caso de uma **Simulation**|
-|range|Intervalo de tempo. Usualmente utilizado em conjunto com o parâmetro *timeEvent* para determinar as datas de início e fim das consultas aos dados de processo|
+|timeEvent|Data e hora do evento que gerou a execução do método. Pode ser informado manualmente em caso de teste, em tempo real no caso de uma **Production** ou simulado no caso de uma **Simulation**|
+|range|Intervalo de tempo. Usualmente utilizado em conjunto com o parâmetro `timeEvent` para determinar as datas de início e término das consultas aos dados de processo|
 |processInterval|Intervalo de tempo de processamento usado em consultas com agregação|
-|parametersMap|Lista de parâmetros globais de uma **Application**, criados através do botão **New Session Parameter**|
+|parametersMap|Lista de parâmetros globais de uma **Application**, criados através da opção **New Session Parameter**|
 |userCache|Memória de execução que pode ser usada para transferir informações entre uma execução e outra|
 |lastExecutedInfo|Informações sobre a última execução|
-|connections|Variável que contém todas as **connections** utilizadas pelos parâmetros de um método que exigem conexões com um **EPM Server**|
-|scopeContext|Contém informações sobre o contexto de execução, ou seja, se a avaliação do método está sendo feita a partir de um teste, uma execução em produção ou em uma simulação. Veja mais [aqui](EPMProcessorAlgoritmos.md#contexto-de-execução).|
+|connections|Variável que contém todas as **Connections** utilizadas pelos parâmetros de um método que exigem conexões com um **EPM Server**|
+|scopeContext|Contém informações sobre o contexto de execução, ou seja, se a avaliação do método está sendo realizada a partir de um teste, de uma execução em produção ou de uma simulação. Consulte o item [Contextos](EPMProcessorAlgoritmos.md#contexto-de-execução) para mais informações|
 
- :large_blue_diamond: Ao construir os métodos deve-se ter em mente que o seu número de parâmetros é fixo e configurado através do **Workbench**.
-Então os métodos que utilizam o *decorator* `@epr.applicationMethod()` não devem utilizar `*args` ou `**kwargs` na construção.
+ > + Ao construir métodos, deve-se considerar que o número de parâmetros é fixo e configurado através do **Workbench**. Portanto, os métodos que utilizam o _decorator_ `epr.applicationMethod` não devem utilizar `args` ou `kwargs` na criação.
 
-:bulb: É possível criar parâmetros adicionais para a *session* através do botão **New Session Parameter**. Esse botão existe na área **Test** do **Code Package** para fins de teste. Para efetivamente usar em **Solutions**, esses parâmetros adicionais deverão ser configurados nas respectivas **Applications**.
+> + É possível criar parâmetros adicionais para o parâmetro `session` através da opção **New Session Parameter**. Esta opção está disponível na área **Test** do **Code Package**. Para efetivamente usar em **Solutions**, estes parâmetros adicionais devem ser configurados nas respectivas **Applications**.
 
-**Parâmetros do método**
+## Parâmetros de um Método
 
-Esses são os tipos de dados disponíveis para serem usados na entrada de parâmetro dos métodos: 
+A tabela a seguir contém os tipos de dados disponíveis para serem usados na entrada de parâmetros de métodos.
 
-|Tipo|Descrição|
+|Tipo de Dados|Descrição|
 |---|---|
-|int|Tipo inteiro do Python|
-|intArray|Sequência de inteiros, por exemplo: [1, 3, 5, 6]|
-|float|Tipo ponto flutuante do Python|
-|floatArray|Sequência de pontos flutuantes, por exemplo: [1.0, 3.5, 5.0, 6.1]|
-|string|Tipo cadeia de caracteres do Python|
-|stringArray|Sequência de cadeia de caracteres, por exemplo: ['abc','def','123']|
-|bool| Tipo booleano do Python|
-|boolArray|Sequência de booleanos, por exemplo: [true, false, false]|
-|dictionary|Tipo dicionario ordenado do Python|
-|datetime|Tipo data-hora do Python (o *Workbench* ajuda a preencher este campo com a ferramenta de calendário)|
-|datetimeArray|Array de datetimes (o *Workbench* ajuda a preencher este campo com a ferramenta de calendário)|
-|session| Tipo exclusivo do EPM Processor - recebe *datetime*, *range* e *process*|
-|epmconnection|Tipo exclusivo do EPM Processor - recebe uma das conexões configuradas em *EPM Connections* |
-|dataobject|Tipo exclusivo do EPM Processor - recebe uma das conexões configuradas em *EPM Connections* e um nome de *dataobject*|
-|dataobjectArray|Lista de *dataobjects*|
-|epmobjectDict|Tipo exclusivo do *EPM Processor* - recebe um das conexões configuradas em *EPM Connections*, um filtro baseado no nome do objeto e um tipo (Os filtros são case sensitive). Vai montar um dicionário ordenado do Python|
+|**int**|Tipo de dados inteiro da linguagem **Python**|
+|**intArray**|Sequência de inteiros, como por exemplo `[1, 3, 5, 6]`|
+|**float**|Tipo de dados de ponto flutuante da linguagem **Python**|
+|**floatArray**|Sequência de pontos flutuantes, como por exemplo `[1.0, 3.5, 5.0, 6.1]`|
+|**string**|Tipo de dados de cadeia de caracteres da linguagem **Python**|
+|**stringArray**|Sequência de cadeia de caracteres, como por exemplo `['abc','def','123']`|
+|**bool**|Tipo de dados booleano da linguagem **Python**|
+|**boolArray**|Sequência de booleanos, como por exemplo `[true, false, false]`|
+|**dictionary**|Tipo de dados dicionario ordenado da linguagem **Python**|
+|**datetime**|Tipo de dados de data e hora da linguagem **Python**. O **Workbench** ajuda a preencher este campo com a ferramenta de calendário|
+|**datetimeArray**|Vetor de tipos de dados **datetime**. O **Workbench** ajuda a preencher este campo com a ferramenta de calendário|
+|**session**|Tipo de dados exclusivo do **EPM Processor**. Recebe as propriedades **datetime**, **range** e **process**|
+|**epmconnection**|Tipo de dados exclusivo do **EPM Processor**. Recebe uma das conexões configuradas em **EPM Connections**|
+|**dataobject**|Tipo de dados exclusivo do **EPM Processor**. Recebe uma das conexões configuradas em **EPM Connections** e um nome de **dataobject**|
+|**dataobjectArray**|Lista de tipos de dados **dataobjects**|
+|**epmobjectDict**|Tipo de dados exclusivo do **EPM Processor**. Recebe um das conexões configuradas em **EPM Connections**, um filtro baseado no nome do objeto (os filtros não diferenciam maiúsculas e minúsculas) e um tipo de dados e monta um dicionário ordenado da linguagem **Python**|
 
+Os tópicos a seguir apresentam exemplos de uso dos parâmetros de um método.
 
-A seguir é apresentado uma série de exemplos de uso:
-
-### Leitura de Dados de **Data Objects**
-
+### Leitura de Dados de Data Objects
 
 #### historyReadRaw()
-Utilizamos esse método do *dataobject* para fazer consultas aos dados brutos (como foram armazenados) de um objeto de dados de um EPM Server, passando apenas o período de tempo da consulta como argumento.
-Para trabalhar com períodos de tempo utiliza-se a classe *QueryPeriod*.
 
-O retorno desta função corresponde a um *array* do módulo *numpy* com o seguinte cabeçalho: *Value*, *Timestamp* e *Quality*.
+Utilize este método para realizar consultas aos dados brutos (como foram armazenados) de um objeto de dados de um **EPM Server**, passando apenas o período de tempo da consulta como argumento. Para trabalhar com períodos de tempo, utilize a classe **QueryPeriod**.
 
-Exemplo:
+O retorno deste método corresponde a um **array** do módulo **numpy** com o cabeçalho `Value`, `Timestamp` e `Quality`. Exemplo:
 
 ```python
 import epmwebapi as epm
@@ -146,17 +141,13 @@ def get_history_raw(session, epmdataobject):
         raise Exception('Error reading raw data.')
 ```
 
-:warning: É uma prática altamente recomendada colocar as consultas históricas sempre dentro de um bloco *try/except* do Python!
-
+> + Recomenda-se sempre colocar as consultas históricas dentro de um bloco `try/except` da linguagem **Python**.
 
 #### historyReadAggregate()
 
-Esse método faz consultas agregadas aos dados de processo conforme o padrão OPC UA. É preciso passar como parâmetro o período da consulta, o tipo de agregação e o intervalo da agregação.
-Nesse caso utiliza-se, além da classe *QueryPeriod*, a classe *AggregateDetails*.
+Este método realiza consultas agregadas aos dados de processo conforme o padrão OPC UA. É preciso passar como parâmetro o período da consulta, o tipo de agregação e o intervalo da agregação. Neste caso utiliza-se, além da classe **QueryPeriod**, a classe **AggregateDetails**.
 
-O retorno desta função corresponde a um *array* do módulo *numpy* com o seguinte cabeçalho: *Value*, *Timestamp* e *Quality*.
-
-Exemplo:
+O retorno deste método corresponde a um **array** do módulo **numpy** com o cabeçalho `Value`, `Timestamp` e `Quality`. Exemplo:
 
 ```python
 import epmwebapi as epm
@@ -165,7 +156,7 @@ import datetime
 @epr.applicationMethod('GetHistoryInterpolative')
 def get_history_interpolative(session, epmdataobject):
     '''Get interpolative data from epm dataobject'''
-    
+
     endtime = session.timeEvent
     initime = endtime - datetime.timedelta(session.range)
 
@@ -176,43 +167,35 @@ def get_history_interpolative(session, epmdataobject):
         data = epmdataobject.historyReadAggregate(aggregationdetails,queryperiod)
     except:
         raise Exception('Error reading processed data.')
-            
+
 ```
-:warning: É uma prática altamente recomendada colocar as consultas históricas sempre dentro de um bloco *try/except* do Python!
+> + Recomenda-se sempre colocar as consultas históricas dentro de um bloco `try/except` da linguagem **Python**.
 
-Veja os tipos de agregações disponíveis no [Apendice A - Agregações](Agregacoes.md).
+Consulte os tipos de agregações disponíveis no *[Apendice A: Agregações](Agregacoes.md)*.
 
 
-### Escrita de Dados em uma **Basic Variable**
+### Escrita de Dados em uma Basic Variable
 
 Existem dois métodos para escrita de dados em uma **Basic Variable** de um **EPM Server**, cada um servindo a uma situação.
 
-* **write()** - Utiliza a "via de tempo real" do **EPM Server**. Deverá ser utilizado quando se deseja escrever um valor único em um único em uma **Basic Variable**.
-
-Para o dataobject receber uma escrita através dessa função é necessário que:
-   * Não exista vínculo da **Basic Variable** com um endereço do **Interface Server**;
-   * Esteja habilitada a opção *"Enable Real Time"* da **Basic Variable**;
-   * Esteja habilitada a opção *"Record"* da **Basic Variable**.
-  
-  
-* **historyUpdate()** - Utiliza a "via de dados históricos" do EPM Server. Utilizado para escrever uma sequência de valores em uma **Basic Variable**. Como argumento deve-se passar a seguinte estrutura de dados do tipo *numpy array*:
++ **write**: Utiliza a via de tempo real do **EPM Server**. Deve ser utilizado quando se deseja escrever um valor único em uma **Basic Variable**. Para que o **dataobject** receba uma escrita através deste método é necessário que não exista vínculo da **Basic Variable** com um endereço do **Interface Server** e que estejam habilitadas as opções **Enable Real Time** e **Record** da **Basic Variable**.
++ **historyUpdate**: Utiliza a via de dados históricos do **EPM Server**. Utilizado para escrever uma sequência de valores em uma **Basic Variable**. Como argumento deve-se passar uma estrutura de dados do tipo **numpy array** como mostrada no exemplo a seguir.
 
 ```python
 import numpy as np
 array_format = np.dtype([('Value', '>f8'), ('Timestamp', 'object'), ('Quality', '>i4')])
 
 ```
-> * A coluna *Value* foi definida para o tipo *floating point* ('>f8') do Python, caso os dados sejam de outro tipo, é necessário adequar este parâmetro para o tipo correspondente.
-> * A coluna *Timestamp* deverá sempre receber dados do tipo *datetime* do Python, e sempre colocado em ordem cronológica natural, ou seja, dos mais antigos aos mais novos.
-> * A coluna *Quality* deverá corresponder a uma qualidade do padrão OPC UA, para valores com qualidade boa o valor correspondente é zero.
 
+Neste exemplo, a coluna **Value** foi definida para o tipo de dados **floating point** (`>f8`) da linguagem **Python**. Caso os dados sejam de outro tipo, é necessário adequar este parâmetro para o tipo de dados correspondente.
+A coluna **Timestamp** deve sempre receber dados do tipo **datetime** da linguagem **Python**, e sempre em ordem cronológica natural, ou seja, dos mais antigos para os mais novos.
+A coluna **Quality** deve corresponder a uma qualidade do padrão OPC UA. Para valores com qualidade boa, o valor correspondente é 0 (zero).
 
-:warning: *Evitar a escrita de dados fora de ordem cronológica. Quando o EPM Server recebe um valor fora de sequência, precisa de processamento extra para inserí-lo no ponto correto.*  
-
+> + Evite a escrita de dados fora de ordem cronológica. Quando o **EPM Server** recebe um valor fora de sequência, precisa de processamento extra para inseri-lo no ponto correto.
 
 #### basicvariable.write(data)
 
-Exemplo:
+Exemplo de uso:
 
 ```python
 import datetime
@@ -231,12 +214,9 @@ def write(session, epmdataobject):
         raise Exception('Error writing data.')
 ```
 
-
 #### basicvariable.historyUpdate(data)
 
-Neste exemplo também é verificado o contexto de execução do método: Test, Simulation ou Production. 
-Veja mais detalhes sobre na documentação da Biblioteca epmprocessor.
-
+Neste exemplo também é verificado o contexto de execução do método, **Test**, **Simulation** ou **Production**. Consulte a documentação da biblioteca **epmprocessor** para mais informações.
 
 ```python
 import epmprocessor as epr
@@ -277,95 +257,85 @@ def history_update(session, epmdataobject):
     except:
         raise Exception('Error in historyUpdate')
 ```
- 
 
+## Acesso aos Resources
 
-### Acesso aos Resources
-É possível acessar a estrutura de arquivos dos recursos do **EPM Webserver** através da API. São acessíveis
-tanto recursos do próprio **EPM Processor**, como também do **EPM Portal**.
-Para acessá-los é necessário ter um parâmetro do tipo *epmconnection*, e a partir do qual são acessados os recursos. 
-
-Para acessar recursos do **EPM Processor** utilize:
+É possível acessar a estrutura de arquivos dos recursos do **EPM Webserver** através da API. São acessíveis tanto recursos do próprio **EPM Processor** como do **EPM Portal**. Para acessar os recursos, é necessário ter um parâmetro do tipo **epmconnection**. Para isto, utilize o código a seguir.
 
 `resource_manager = epmconnection.getProcessorResourcesManager()`
 
-Para recursos do **EPM Portal** utilize:
+Para recursos do **EPM Portal**, utilize o código a seguir.
 
 `resource_manager = epmconnection.getPortalResourcesManager()`
 
+### Exemplos
 
-**Exemplos:**
-
-**Download de recurso:**
+#### Download de Recursos
 
 ```python
 @epr.applicationMethod('ResourceAccess')
 def resource_access(session, epmconnection):
     '''Access resource from EPM Processor '''
-    
+
     resource_manager = epmconnection.getProcessorResourcesManager()
     image_resource = resource_manager.getResource('folder/image.png')
     image = image_resource.download(epm.DownloadType.Binary)   
- 
+
 ```
 
-**Upload de imagem para uma pasta do EPM Portal:**
+#### Upload de Imagem para uma Pasta do EPM Portal
 
 ```python
 @epr.applicationMethod('UploadImage')
 def upload_image(session, epmconnection, pathname):
     '''Upload matplotlib .png chart to EPM Portal resources folder '''
-    
+
     some_data = [1,2,3,4,5]
     import matploptlib.pyplot as plt
     import io
     import mimetypes
-    
+
     plt.plot(some_data)    
     buffer = io.BytesIO()    
     plt.savefig(buffer, format='png') #salva figura em buffer
     buffer.seek(0)
-    
+
     resource_manager = epmconnection.getPortalResourcesManager()
     folder = resource_manager.getResource(pathname)
-    
+
     #faz upload do buffer com o tipo .png
     resource = imgFolder.upload('image.png', buffer, 'matplotlib plot',
                                 mimetypes.types_map['.png'], overrideFile=True)  
 ```
 
-
-**Deletando um resource:**
+#### Apagando um Resource
 
 ```python
 @epr.applicationMethod('Delete')
 def delete_image(session, epmconnection):
     '''Delete EPM Portal resource'''  
-      
+
     resource_manager = epmconnection.getPortalResourcesManager()    
     resource_manager.getResource(u'folder/image.png').delete()
 ```
 
+## Objetos do Elipse Data Model (Aplicações do E3 ou Elipse Power)
 
-### Objetos do Elipse Data Model (aplicações do Elipse E3 e/ou Elipse Power)
+O **Elipse DataModel** permite replicar a estrutura de dados dos sistemas SCADA da **Elipse Software** (**E3** ou **Elipse Power**). Uma vez que esta estrutura exista no **EPM Server**, é possível localizar e trabalhar com seus elementos no código.
 
-O **Elipse DataModel** permite replicar a estrutura de dados dos sistemas SCADA da Elipse (Elipse E3 e Elipse Power).
+Uma das formas de obter estes elementos é utilizando o tipo de dados **epmobjectDic** como parâmetro de entrada. Desta forma o filtro é realizado no **EPM Server** e o parâmetro contém um objeto do tipo de dados dicionário ordenado da linguagem **Python** com o resultado do filtro.
 
-Uma vez que essa estrutura exista no **EPM Server** é possível localizar e trabalhar com seus elementos no código.
+![epmobjectdict](images/algoritmos_epmobjectDict.PNG "Configuração de parâmetros")
 
-Uma das formas de obter esses elementos é utilizando o tipo **epmobjectDic** como parâmetro de entrada. Dessa forma o filtro é realizado no **EPM Server** e o parâmetro irá conter um objeto do tipo dicionário ordenado do Python com o resultado do filtro.
+A tabela a seguir descreve as opções mostradas na imagem anterior.
 
-![epmobjectdict](images/algoritmos_epmobjectDict.PNG)
-
-A tabela abaixo descreve os campos apresentados na imagem acima:
-
-|Campo|Descrição|
+|Opção|Descrição|
 |---|---|
-|EPM Connection|Uma das conexões configuradas em EPM Connections|
-|Filter|Nome ou parte do nome do objeto (**case sensitive**)|
-|Type|Tipo do objeto|
+|**EPM Connection**|Uma das conexões configuradas em **EPM Connections**|
+|**Filter**|Nome ou parte do nome do objeto. O filtro diferencia entre maiúsculas e minúsculas|
+|**Type**|Tipo do objeto|
 
-**Exemplo:**
+### Exemplo
 
 ```python
 
@@ -382,24 +352,22 @@ def get_history_raw(session, obj_dict):
     initime = endtime - datetime.timedelta(session.range)
 
     queryperiod = epm.QueryPeriod(initime, endtime)
-     
+
     for obj in obj_dict.values():
         print(obj.historyReadRaw(queryperiod))
 
     return epr.ScopeResult(True)   
 ```
 
+## Contexto
+Através de um parâmetro da `session` é possível verificar qual é o contexto em que o método está sendo executado.
 
++ **Test**: Quando é executado através da opção **Test** do **Code Package**
++ **Simulation**: Quando é executado a partir de uma **Simulation**
++ **Production**: Quando é executado a partir de uma **Production**
 
-#### Contexto
-É possível, através de um parâmetro da *session*, verificar qual é o contexto em que o método está sendo executado.
-
-* Test - Quando executado através do botão Test do **Code Package**
-* Simulation - Quando é executado a partir de em uma **Simulation**
-* Production - Quando é executado a partir de em uma **Production**
-
-Pode ser interessante criar execuções diferenciadas para cada um dos casos. Por exemplo: Em *Test* ou *Simulation* pode não ser 
-interessante escrever o resultado em variáveis do **EPM Server**, mas sim mostrar o resultado utilizando `print()`.
+Pode ser interessante criar execuções diferenciadas para cada um dos casos. Por exemplo, em **Test** ou **Simulation** pode não ser
+interessante escrever o resultado em variáveis do **EPM Server**, mas sim mostrar o resultado utilizando o método `print`.
 
 ```python
 import epmprocessor as epr
@@ -422,10 +390,4 @@ def scope_context(session):
 
 ```
 
-[Próxima seção - Suporte](EPMProcessorSuporte.md)
-
----
-
-<sup>1</sup> O termo método advém do paradadigma de programação orientada a objetos, onde método refere-se à uma função definida em uma classe particular.
-
-<sup>2</sup> É um termo que designa um padrão de projeto de software que permite agregar dinamicamente funcionalidades adicionais a um dado objeto.
+*[Próxima Seção: Suporte](EPMProcessorSuporte.md)*

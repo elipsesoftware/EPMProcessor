@@ -1,13 +1,11 @@
-## Notas de versão
+# Notas de Versão
 
-[Retornar ao menu](menu.md)
+*[Retornar ao menu](menu.md)*
 
-#### Versão 1.0 
+## Versão 1.0
 
-**Data:** 22/08/2018
+**Data**: 22/08/2018
 
 Versão de lançamento.
 
-
-
-[Próxima seção - Third-party](EPMProcessorThirdparty.md)
+*[Próxima Seção: Bibliotecas de Terceiros](EPMProcessorThirdparty.md)*

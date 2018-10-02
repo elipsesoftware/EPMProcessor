@@ -1,42 +1,35 @@
-# Guia de instalação Anaconda3
-Data: 24/07/2018
+# Guia de instalação da Distribuição Anaconda
+
+Data: 26/09/2018
+
 Versão: 0.1
 
+## Pré-requisitos
 
-
-### Pré-requisitos
-
-1. Arquivo do instalador do Anaconda3 para Windows, disponível aqui:
-https://repo.anaconda.com/archive/Anaconda3-5.2.0-Windows-x86_64.exe
-2. Windows Vista ou superior.
-3. 3GB de espaço em disco para o download e instalação.
++ Arquivo de instalação da distribuição *[Anaconda para Windows](https://www.anaconda.com)*
++ **Windows Vista** ou superior
++ 3 GB de espaço em disco para *download* e instalação
 
 ## Instalação
 
-* Para evitar erros de permissão, não execute o instalador a partir da pasta Favoritos.
-* Recomendamos desabilitar o antivírus antes da instalação e habilitar após o término.
+> + Para evitar erros de permissão, não execute o instalador a partir da pasta **Favoritos**.
+> + Recomenda-se desabilitar qualquer antivírus antes da instalação e habilitá-lo após o término.
 
-1. Duplo-clique no instalador.
-2. Clique em Next.
-3. Leia os termos de uso e clique em "I Agree".
-4. Selecione uma pasta de destino
-![instalacao1](images/anaconda_install-win-destination.png)
+1. Clique duas vezes no arquivo do instalador.
+2. Clique em **Next**.
+3. Leia os termos de uso e clique em **I Agree**.
+4. Selecione uma pasta de destino.
 
-5. Marque as opções: "Add Anaconda to may PATH environment variable" e "Register Anaconda as my default Python 3.6". 
+![instalacao1](images/anaconda_install-win-destination.png "Pasta de destino da instalação")
 
-![instalacao2](images/anaconda_install-win-path.png)
+5. Selecione as opções **Add Anaconda to my PATH environment variable** e **Register Anaconda as my default Python 3.6**.
 
-6. Clique em Install
+![instalacao2](images/anaconda_install-win-path.png "Opções avançadas de instalação")
 
-7. Opcional: O instalador dá a opção de instalar o Microsoft VSCode Studio. Aceite apenas se deseja utilizar esse editor. Senão, clique em Skip.
+6. Clique em **Install**.
 
-![vscode](images/anaconda_vscode-install.png)
+7. O instalador também permite a opção de instalar o **Microsoft Visual Studio Code**. Aceite apenas se deseja utilizar este editor. Senão, clique em **Skip**.
 
-8. Clique em Finish para fechar a janela do instalador.
+![vscode](images/anaconda_vscode-install.png "Instalação do Visual Studio Code")
 
-
-...
-
-
-
-
+8. Clique em **Finish** para fechar a janela do instalador.

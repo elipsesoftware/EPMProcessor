@@ -1,38 +1,24 @@
-# Guia de instalação Python 3.6
-Data: 24/07/2018
-Versão: 0.1
+# Guia de instalação da Distribuição Python
 
+**Data**: 02/10/2018
 
+**Versão**: 0.1
 
-### Pré-requisitos
+## Pré-requisitos
 
-* Arquivo do instalador  para Windows, disponível aqui:
-https://www.python.org/downloads/windows/
-* Windows Vista ou superior
-
++ Instalador para Windows, disponível no site da linguagem *[Python](https://www.python.org/downloads/windows/)*
++ **Windows Vista** ou superior
 
 ## Instalação
-1. Clique duas vezes no arquivo de instalação para iniciar.
-2. Depois de iniciar, serão apresentadas duas opções:
-![windows installer](images/python_install.png)
 
-#### Se for selecionado “*Install Now*”:
-* Não é necessário permissão de Administrador (a menos que seja necessário algum update em *C Runtime Library* ou 
-tenha marcado a opção "*install launcher for  all users*")
-* O Python será instalado no diretório do usuário.
-* Serão instalados a *Python standard library* e o PIP (*Python Install Packages*).
-* Se selecionado, o diretório de instalação será adicionado ao PATH
+Para iniciar a instalação, clique duas vezes no arquivo de instalação. Após iniciar a instalação, há duas opções, mostradas na figura a seguir.
 
+![windows installer](images/python_install.png "Opções de instalação")
 
-#### Se for selecionado "*Customize installation*": 
-Selecionando “*Customize installation*” são mostradas opções para alterar o local de instalação, quais features serão instaladas, etc.
+### Opção Install Now
 
-* Pode ser requerido permissão de administrador
-* A instalação ocorrerá no diretório de escolha
-* A *standard library* pode ser pré-compilada em *bytecode*
+Neste caso não é necessário um usuário com permissão de Administrador, a menos que seja necessário um _update_ da **C Runtime Library** ou se a opção **Install launcher for all users** estiver selecionada. A distribuição **Python** é instalada no diretório do usuário e são também instaladas as bibliotecas **Python Standard Library** e **PIP** (*Python Install Packages*). Se selecionada a opção **Add Python to PATH**, o diretório de instalação é adicionado à variavel de ambiente **PATH**.
 
+### Opção Customize installation
 
-
-
-
-
+Neste caso são mostradas opções para alterar o local de instalação e quais os recursos a instalar, entre outras opções. Esta opção pode requerer um usuário com permissão de Administrador. A **Standard Library** pode ser pré-compilada em _bytecode_.
