@@ -1,6 +1,6 @@
 # Guia Rápido de Utilização do EPM Processor
 
-Data: 26/09/2018
+Data: 02/10/2018
 
 Versão: 0.1
 
@@ -92,7 +92,7 @@ def parabola_func(session, a, b, c):
         print('(Escopo de Teste) Raízes: {}'.format(calc(a,b,c)))
     elif session.scopeContext == session.scopeContext.Production:
         print('(Escopo de Produção) Raízes: {}'.format(calc(a,b,c)))
-        
+
     return epr.ScopeResult(True)
 
 def calc(a, b, c):

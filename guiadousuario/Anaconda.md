@@ -1,6 +1,6 @@
 # Guia de instalação da Distribuição Anaconda
 
-Data: 26/09/2018
+Data: 02/10/2018
 
 Versão: 0.1
 

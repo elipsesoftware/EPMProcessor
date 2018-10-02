@@ -1,12 +1,12 @@
 # Guia de Instalação da Distribuição Anaconda
 
-Data: 26/09/2018
+Data: 02/10/2018
 
 Versão: 0.1
 
 ## Pré-requisitos
 
-+ Arquivo de instalação da distribuição *[Anaconda para Windows](https://repo.anaconda.com/archive/Anaconda3-5.2.0-Windows-x86_64.exe)*
++ Arquivo de instalação da distribuição *[Anaconda para Windows](https://www.anaconda.com)*
 + **Windows Vista** ou superior
 + 3 GB de espaço em disco para *download* e instalação
 
