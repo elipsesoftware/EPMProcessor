@@ -4,8 +4,8 @@ O **EPM Processor** é o módulo do **Elipse Plant Manager** reponsável pela ex
 
 * Documentação
 
-  * [Guia Rápido de Utilização](quickstart/EPMProcessorQuickstart.md)
-  * [Manual do Usuário](guiadousuario/menu.md)
+  * [Guia Rápido de Utilização](quickstart/README.md)
+  * [Manual do Usuário](guiadousuario/README.md)
 
 * Exemplos
 
