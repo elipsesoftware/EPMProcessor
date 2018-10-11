@@ -3,7 +3,7 @@ import epmprocessor as epr
 import epmwebapi as epm
 import numpy as np
 import pandas as pd
-
+import datetime
 
 @epr.applicationMethod('HistoryUpdate')
 def history_update(session, epmdataobject):
@@ -14,6 +14,8 @@ def history_update(session, epmdataobject):
 
     #just a five itens list
     newvalues = [50,60,30,40,10]
+    base = datatime.datetime(2018,1,1)
+    newdates = np.array([base + datetime.timedelta(hours=i) for i in range(5)])
 
     # epm ndarray data format.
     desc = np.dtype([('Value', '>f8'), ('Timestamp', 'object'), ('Quality', '>i4')])
