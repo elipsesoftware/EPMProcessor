@@ -1,6 +1,6 @@
 # Instalação
 
-*[Retornar ao menu](menu.md)*
+*[Retornar ao menu](README.md)*
 
 ## Pré-requisitos
 

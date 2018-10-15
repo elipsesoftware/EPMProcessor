@@ -1,6 +1,6 @@
 # Apêndice B - Dicas de Python
 
-*[Retornar ao menu](menu.md)*
+*[Retornar ao menu](README.md)*
 
 ## Acessando Packages Globais
 

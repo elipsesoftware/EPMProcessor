@@ -1,6 +1,6 @@
 # Applications
 
-*[Retornar ao menu](menu.md)*
+*[Retornar ao menu](README.md)*
 
 Uma **Application** guarda as configurações básicas para a execução de um método, sendo um dos parâmetros necessários na configuração de uma **Production** ou **Simulation**, que por sua vez compõem uma *[Solution](EPMProcessorSolutions.md)*.
 

@@ -1,6 +1,6 @@
 # EPM Processor: Terminologia
 
-*[Retornar ao menu](menu.md)*
+*[Retornar ao menu](README.md)*
 
 Este tópico contém uma lista, em ordem alfabética, com a descrição de diversos termos utilizados neste Manual.
 

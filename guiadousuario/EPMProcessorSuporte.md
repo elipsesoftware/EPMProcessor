@@ -1,6 +1,6 @@
 # Suporte
 
-*[Retornar ao menu](menu.md)*
+*[Retornar ao menu](README.md)*
 
 ## Perguntas Frequentes
 

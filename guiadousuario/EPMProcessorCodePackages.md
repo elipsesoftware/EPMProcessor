@@ -1,6 +1,6 @@
 # Code Packages
 
-*[Retornar ao menu](menu.md)*
+*[Retornar ao menu](README.md)*
 
 Um **Code Package** é um conjunto de códigos escritos em linguagem **Python** contendo as lógicas das instruções que podem ser utilizadas posteriormente nas aplicações. O **Code Package** deve ser empacotado através da operação de **Deploy** ou **Deploy++**, quando passa a ser denominado simplesmente de **Package**.
 

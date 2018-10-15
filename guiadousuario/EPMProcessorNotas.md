@@ -1,6 +1,6 @@
 # Notas de Versão
 
-*[Retornar ao menu](menu.md)*
+*[Retornar ao menu](README.md)*
 
 ## Versão 1.0
 

@@ -1,6 +1,6 @@
 # Resources
 
-*[Retornar ao menu](menu.md)*
+*[Retornar ao menu](README.md)*
 
 A seção **Resources** dá acesso à estrutura de pastas e arquivos disponível no **EPM Webserver**. Nesta estrutura é possível dispor todos os arquivos que possam ser necessários para uso nas aplicações, como por exemplo arquivos de modelos de processo para usar em simulações ou predições, arquivos com _templates_ para usar na produção de relatórios, imagens, dados, etc.
 

@@ -1,6 +1,6 @@
 # EPM Connections
 
-*[Retornar ao menu](menu.md)*
+*[Retornar ao menu](README.md)*
 
 Uma **EPM Connection** é uma configuração de conexão a um **EPM Webserver** que, por sua vez, está vinculado a um único **EPM Server**. Através desta conexão é possível o acesso aos seguintes itens de um **EPM Server**:
 

@@ -1,6 +1,6 @@
 # EPM Processor Workbench
 
-*[Retornar ao menu](menu.md)*
+*[Retornar ao menu](README.md)*
 
 O **EPM Processor Workbench**, ou simplesmente **Workbench**, é a interface _web_ que provê todas as funcionalidades necessárias para a criação, gerenciamento, manutenção e execução de soluções implementadas em linguagem **Python**. A figura a seguir mostra o fluxo de trabalho do **EPM Processor**.
 
