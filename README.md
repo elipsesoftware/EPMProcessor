@@ -1,6 +1,6 @@
 # EPM Processor
 
-O **EPM Processor** é o módulo do **Elipse Plant Manager** reponsável pela execução de cálculos e processamentos em linguagem **Python**. 
+O **EPM Processor** é o módulo do **Elipse Plant Manager** reponsável pela execução de códigos em linguagem **Python**, baseados em eventos simulados ou de tempo real. 
 
 * Documentação
 
@@ -16,6 +16,6 @@ O **EPM Processor** é o módulo do **Elipse Plant Manager** reponsável pela ex
   * [Buscando Resources no EPM Webserver](exemplos/get_resources.py)
 
 ## epmwebapi
-A **epmwebapi** é uma biblioteca criada pela Elipse para a linguagem Python. Pode ser utilizada pelo **EPM Processor** ou em qualquer algoritmo Python.
+A **epmwebapi** é uma biblioteca para acesso aos dados do [EPM](https://www.elipse.com.br/produto/elipse-plant-manager/). Pode ser utilizada pelo **EPM Processor** ou em qualquer algoritmo Python.
 Acesse mais informações e exemplos [aqui](https://github.com/elipsesoftware/epmprocessor/tree/master/epmwebapi). 
   
