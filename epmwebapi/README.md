@@ -21,8 +21,8 @@ A **epmwebapi** é uma biblioteca para a linguagem Python construída com o obje
 * [pandas](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_pandas.ipynb)
 * [pandas e dataviz](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/pandas_and_dataviz.ipynb)
 * [numpy](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_numpy.ipynb)
-* [Regressão por árvore de decisão](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/decision_tree_regression.ipynb)
-
+* [Regressão por árvore de decisão](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/pandas_and_dataviz.ipynb)
+* [Buscando em um webserver e escrevendo no EPM Server](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/write_from_webserver.ipynb)
 
 
 
