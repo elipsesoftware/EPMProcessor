@@ -16,14 +16,14 @@ A **epmwebapi** é uma biblioteca para a linguagem Python construída com o obje
 
 **Exemplos:**
 
-* [Exemplo básico](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/Quickstart.ipynb)
-* [matplotlib](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_matplotlib.ipynb)
-* [pandas](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_pandas.ipynb)
-* [pandas e dataviz](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/pandas_and_dataviz.ipynb)
-* [numpy](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_numpy.ipynb)
-* [Regressão por árvore de decisão](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/pandas_and_dataviz.ipynb)
-* [Buscando em um webserver e escrevendo no EPM Server](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/write_from_webserver.ipynb)
-* [Machine Learning](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_machine_learning.ipynb)
+* [Exemplo básico](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/Quickstart.ipynb) - Exemplos de leituras e escritas de dados e anotações. 
+* [Matplotlib](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_matplotlib.ipynb) - Utilizando essa biblioteca para gerar gráficos.
+* [Pandas](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_pandas.ipynb) - Use Pandas para manipular dados tabulares.
+* [Pandas e dataviz](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/pandas_and_dataviz.ipynb) - Utilizando essas bibliotecar para manipular dados e gerar visualizções gráficas.
+* [Numpy](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_numpy.ipynb) - Numpy é uma biblioteca essecial para trabalhar com cálculos de dados em matrizes.
+* [Regressão por árvore de decisão](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/pandas_and_dataviz.ipynb) - Veja como utilizar a biblioteca Scikit-learn para fazer uma regressão. 
+* [Buscando em um webserver e escrevendo no EPM Server](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/write_from_webserver.ipynb) - Lendo dados de temperatura do Webserver do INPE e escrevendo em uma variável do EPM Server. 
+* [Machine Learning](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_machine_learning.ipynb) - Noções e exemplos de uso dessa técnica cada vez mais utilizada em dados de processo.
 
 
 

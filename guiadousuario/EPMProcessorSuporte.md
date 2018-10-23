@@ -28,7 +28,7 @@ Verifique o funcionamento do **EPM Webserver** e do **EPM Server**.
 
 Selecione a opção **CGI**, conforme mostrado na figura a seguir.
 
-![suport cgi](./images/suporte_cgi.png "Opção CGI no IIS")
+![suport cgi](./images/suporte_cgi.PNG "Opção CGI no IIS")
 
 ### Quais são as bibliotecas Python necessárias para o EPM Processor?
 
