@@ -4,7 +4,7 @@ A **epmwebapi** é uma biblioteca para a linguagem Python construída com o obje
 
 
 **Requisitos:**
-* EPM Webserver 3.07
+* EPM Webserver 3.06
 * Python 3.6 x64
 * Numpy
 * Requests
@@ -24,6 +24,8 @@ A **epmwebapi** é uma biblioteca para a linguagem Python construída com o obje
 * [Regressão por árvore de decisão](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/pandas_and_dataviz.ipynb) - Veja como utilizar a biblioteca Scikit-learn para fazer uma regressão. 
 * [Buscando em um webserver e escrevendo no EPM Server](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/write_from_webserver.ipynb) - Lendo dados de temperatura do Webserver do INPE e escrevendo em uma variável do EPM Server. 
 * [Machine Learning](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_machine_learning.ipynb) - Noções e exemplos de uso dessa técnica cada vez mais utilizada em dados de processo.
+* [Análise de temperatura e conforto térmico](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/temp_elipse_ecc.ipynb) - Análises de dados reais de temperaturas das salas da Elipse.
+* [Criando mapas](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/mapmarker_heatmap.ipynb) - Trabalhando com dados de geolocalização e mapas interativos. 
 
 
 

@@ -21,7 +21,7 @@ O objetivo deste guia é mostrar como criar e executar um algoritmo simples. Con
 + **Windows 7 SP1** ou superior x64
 + **Windows Server 2008 R2** ou superior x64
 + **Framework .NET** 4.7.1 ou superior
-+ **Internet Information Services (IIS)** com CGI ativado
++ **Internet Information Services (IIS)** com CGI ativado. Veja como ativar [aqui](https://github.com/elipsesoftware/epmprocessor/blob/master/guiadousuario/EPMProcessorSuporte.md#como-ativar-o-cgi-no-iis-internet-information-services).
 + **EPM Server** 3.6 ou superior
 + **EPM Webserver** 3.6 ou superior instalado e configurado (*[Consulte o Guia de Instalação](EPMWebserver.md)*)
 + **Python 3.6** x64 instalado com a opção *Install for all users* (recomenda-se a instalação da distribuição *[Anaconda](Anaconda.md)*)
