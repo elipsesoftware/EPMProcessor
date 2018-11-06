@@ -173,6 +173,21 @@ def get_history_interpolative(session, epmdataobject):
 
 Consulte os tipos de agregações disponíveis no *[Apendice A: Agregações](Agregacoes.md)*.
 
+#### read()
+
+Este método realiza a consulta do valor atual da variável. Não é preciso informar ao método nenhum parâmetro.
+
+```python
+
+bvname = 'bv_name'
+bv = connection.getDataObjects(bvname)
+data = obj.read()
+
+value = data.value
+timestamp = data.timestamp
+```
+
+
 
 ### Escrita de Dados em uma Basic Variable
 
