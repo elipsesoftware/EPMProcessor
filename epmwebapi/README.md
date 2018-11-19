@@ -8,6 +8,7 @@ A **epmwebapi** é uma biblioteca para a linguagem Python construída com o obje
 * Python 3.6 x64
 * Numpy
 * Requests
+* Flask
 
 
 **Instalação:**
