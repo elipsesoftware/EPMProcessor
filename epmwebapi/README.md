@@ -27,6 +27,8 @@ A **epmwebapi** é uma biblioteca para a linguagem Python construída com o obje
 * [Machine Learning](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/basic_use_machine_learning.ipynb) - Noções e exemplos de uso dessa técnica cada vez mais utilizada em dados de processo.
 * [Análise de temperatura e conforto térmico](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/temp_elipse_ecc.ipynb) - Análises de dados reais de temperaturas das salas da Elipse.
 * [Criando mapas](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/maps.ipynb) - Trabalhando com dados de geolocalização e mapas interativos. 
+* [Acessando informações do EPM Server](https://github.com/elipsesoftware/epmprocessor/blob/master/epmwebapi/exemplos/server_information.ipynb) - Acessando informações como versão, chave de produto, informações sobre os Interface Servers, etc. 
+
 
 
 
