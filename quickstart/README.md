@@ -12,7 +12,7 @@ O **EPM Processor** atua neste cenário possibilitando que algoritmos escritos e
 
 Com essa ferramenta é possível gerenciar toda a geração de informações baseadas nos dados de processo, incorporando ou não informações de outras fontes de dados, tudo em um ambiente seguro e de fácil manutenção, requisitos vitais para a gestão das informações do negócio.
 
-O objetivo deste guia é mostrar como criar e executar um algoritmo simples. Consulte o **Guia do Usuário do EPM Processor** para uma abordagem mais completa e detalhada de todas as funcionalidades da plataforma.
+O objetivo deste guia é mostrar como criar e executar um algoritmo simples. Consulte o [**Guia do Usuário do EPM Processor**](https://github.com/elipsesoftware/epmprocessor/tree/master/guiadousuario) para uma abordagem mais completa e detalhada de todas as funcionalidades da plataforma.
 
 ## Instalação e Configuração
 

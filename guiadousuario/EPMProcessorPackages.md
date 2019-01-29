@@ -12,7 +12,7 @@ A tabela a seguir mostra a função de cada uma das opções da tabela de visual
 
 |Opção|Descrição|
 |:---:|---|
-|![pencil icon](./images/fa_pencil_icon_18.PNG "Visualizar")|Abre a visualização do **Package**|
+|![pencil icon](./images/fa_pencil_icon_18.png "Visualizar")|Abre a visualização do **Package**|
 |![share icon](./images/fa_sharesquare_icon_18.png "Exportar")|Exporta o **Package** no formato **JSON**|
 |![trash icon](./images/fa_trash_icon_18.png "Excluir")|Exclui o **Package**|
 

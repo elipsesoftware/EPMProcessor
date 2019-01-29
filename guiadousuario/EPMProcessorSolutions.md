@@ -14,7 +14,7 @@ Para visualizar e criar novas **Solutions**, clique em **Solutions** no menu lat
 
 |Opção|Descrição|
 |:---:|---|
-|![pencil icon](./images/fa_pencil_icon_18.PNG "Editar")|Edita uma **Solution**|
+|![pencil icon](./images/fa_pencil_icon_18.png "Editar")|Edita uma **Solution**|
 |![copy icon](./images/fa_copy_icon_18.png "Copiar")|Cria uma cópia da **Solution** com um nome diferente|
 |![trash icon](./images/fa_trash_icon_18.png "Excluir")|Exclui uma **Solution**|
 
@@ -58,7 +58,7 @@ A tabela a seguir descreve as opções da janela anterior.
  Na configuração da figura anterior são gerados 30 eventos, pois o intervalo é de 30 dias e a unidade e contagem é de 1 (um) dia. Para esta configuração, execute os procedimentos a seguir.
 
 1. Clique em **Save**.
-2. Na lista de **Simulations**, clique em ![pencil icon](./images/fa_pencil_icon_18.PNG "Editar") para abrir a visualização.
+2. Na lista de **Simulations**, clique em ![pencil icon](./images/fa_pencil_icon_18.png "Editar") para abrir a visualização.
 3. Clique em **Execute** para iniciar a execução do método.
 4. Aguarde o término da execução para visualizar o resultado.
 
@@ -91,12 +91,12 @@ Para visualizar e editar **Productions**, clique em **Solutions** no menu latera
 
 |Opção|Descrição|
 |:---:|---|
-|![pencil icon](./images/fa_pencil_icon_18.PNG "Editar")|Abre a visualização e edição da **Production** selecionada|
+|![pencil icon](./images/fa_pencil_icon_18.png "Editar")|Abre a visualização e edição da **Production** selecionada|
 |![copy icon](./images/fa_copy_icon_18.png "Copiar")|Cria uma cópia da **Production** selecionada com um nome diferente|
 |![trash icon](./images/fa_trash_icon_18.png "Excluir")|Exclui a **Production** selecionada|
 |![play icon](./images/fa_play_icon_18.png "Iniciar ou Parar")|Inicia ou para a execução da **Production** selecionada|
 
-Para abrir a visualização de uma **Production**, clique em ![pencil icon](./images/fa_pencil_icon_18.PNG "Editar"). A janela de visualização contém as abas a seguir:
+Para abrir a visualização de uma **Production**, clique em ![pencil icon](./images/fa_pencil_icon_18.png "Editar"). A janela de visualização contém as abas a seguir:
 
 + **Results**: Visualização do resultado da execução da **Production**. Filtre por data para localizar o resultado de execuções.
 + **App Config**: Edição da **Production** em relação à **Application**. É possível alterar os valores padrão inseridos na configuração da **Application**.

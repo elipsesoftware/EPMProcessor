@@ -19,10 +19,10 @@ As opções de arquivos e diretórios estão descritas na tabela a seguir.
 
 |Opção|Descrição|
 |:---:|---|
-|![pencil icon](./images/fa_pencil_icon_18.PNG "Editar")|Permite editar o nome e a descrição|
+|![pencil icon](./images/fa_pencil_icon_18.png "Editar")|Permite editar o nome e a descrição|
 |![cloudupload icon](./images/fa_cloudupload_icon_18.png "Upload")|Executa o *upload* de um arquivo|
-|![plus icon](./images/fa_plus_icon_18.PNG "Inserir")|Insere um novo diretório|
-|![refresh icon](./images/fa_refresh_icon_18.PNG "Recarregar")|Recarrega um diretório|
+|![plus icon](./images/fa_plus_icon_18.png "Inserir")|Insere um novo diretório|
+|![refresh icon](./images/fa_refresh_icon_18.png "Recarregar")|Recarrega um diretório|
 |![trash icon](./images/fa_trash_icon_18.png "Apagar")|Apaga um diretório ou arquivo|
 
 > + Os arquivos inseridos através desta ferramenta são salvos em formato binário no servidor. Ao acessá-los via código, lembre-se de convertê-los, se necessário.

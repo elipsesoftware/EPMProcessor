@@ -9,9 +9,9 @@ A área de visualização possui uma tabela com informações dos **Code Package
 |Opção|Descrição|
 |:---:|---|
 |![thumbs up icon](./images/fa_up_icon_18.png "Status")|Status da verificação de código|
-|![pencil icon](./images/fa_pencil_icon_18.PNG "Editar")|Permite editar o **Code Package**|
-|![download icon](./images/fa_download_icon_18.PNG "Download")|Permite executar o _download_ do **Code Package**|
-|![trash icon](./images/fa_trash_icon_18.PNG "Excluir")|Exclui o **Code Package**|
+|![pencil icon](./images/fa_pencil_icon_18.png "Editar")|Permite editar o **Code Package**|
+|![download icon](./images/fa_download_icon_18.png "Download")|Permite executar o _download_ do **Code Package**|
+|![trash icon](./images/fa_trash_icon_18.png "Excluir")|Exclui o **Code Package**|
 
 Dentro de um **Code Package** são realizados *uploads* e edições de códigos em linguagem **Python**, testes de métodos e utilização das opções de **Deploy**. Para criar um novo **Code Package**, siga estes procedimentos.
 
@@ -48,9 +48,9 @@ As opções mostradas na figura anterior estão descritas na tabela a seguir.
 |Opção|Descrição|
 |:---:|---|
 |![save icon](./images/fa_save_icon_18_333.png "Salvar")|Salva a última edição do algoritmo|
-|![refresh icon](./images/fa_refresh_icon_18_333.PNG "Carregar")|Carrega a última versão salva|
-|![upload icon](./images/fa_upload_icon_18_333.PNG "Upload")|Executa o _upload_ de um código fonte e substitui o atual|
-|![trash icon](./images/fa_trash_icon_18_333.PNG "Excluir")|Exclui o código fonte|
+|![refresh icon](./images/fa_refresh_icon_18_333.png "Carregar")|Carrega a última versão salva|
+|![upload icon](./images/fa_upload_icon_18_333.png "Upload")|Executa o _upload_ de um código fonte e substitui o atual|
+|![trash icon](./images/fa_trash_icon_18_333.png "Excluir")|Exclui o código fonte|
 |![pencil icon](./images/fa_pencil_icon_18_333.png "Editar")|Edita o nome e a descrição do código fonte|
 
 ## Editor

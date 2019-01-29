@@ -17,11 +17,11 @@ As opções na lista **Applications** estão descritas na tabela a seguir.
 
 |Opção|Descrição|
 |:---:|---|
-|![pencil icon](./images/fa_pencil_icon_18.PNG "Editar")|Edita a **Application**|
+|![pencil icon](./images/fa_pencil_icon_18.png "Editar")|Edita a **Application**|
 |![copy icon](./images/fa_copy_icon_18.png "Copiar")|Cria uma cópia da **Application**|
 |![trash icon](./images/fa_trash_icon_18.png "Excluir")|Exclui a **Application**|
 
-Para criar uma nova **Application**, clique em ![pencil icon](./images/fa_pencil_icon_18.PNG "Editar") para editar o grupo de **Applications**, conforme a figura a seguir.
+Para criar uma nova **Application**, clique em ![pencil icon](./images/fa_pencil_icon_18.png "Editar") para editar o grupo de **Applications**, conforme a figura a seguir.
 
 ![application menu](./images/applications_menu.PNG "Opções do grupo de Applications")
 
