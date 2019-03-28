@@ -1,5 +1,8 @@
 # epmwebapi
 
+## Os exemplos da epmwebapi foram movidas para um repositório próprio. Este está descontinuado e será excluído em breve. 
+## Acesse: https://github.com/elipsesoftware/epmwebapi
+
 A **epmwebapi** é uma biblioteca para a linguagem Python construída com o objetivo de interagir com os dados do **Elipse Plant Manager**, possibilitando uma maior flexibilidade para **buscar**, **organizar**, **analisar**, **compartilhar e monitorar os dados**. 
 
 

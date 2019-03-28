@@ -17,10 +17,4 @@ O **EPM Processor** é o módulo do **Elipse Plant Manager** reponsável pela ex
 
 
 
-
-
-# Epmwebapi
-A **Epmwebapi** é uma biblioteca criada pela Elipse para a linguagem Python. Pode ser utilizada pelo **EPM Processor** ou em qualquer algoritmo Python.
-
-Acesse mais informações e exemplos [aqui](https://github.com/elipsesoftware/epmprocessor/tree/master/epmwebapi). 
   
