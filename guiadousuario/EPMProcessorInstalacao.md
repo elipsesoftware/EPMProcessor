@@ -6,7 +6,7 @@
 
 + **Windows 7 SP1** ou superior x64
 + **Windows Server 2008 R2 SP1** ou superior
-+ **Framework .NET** 4.7.1 ou superior
++ **Framework .NET** 4.7.2 ou superior
 + **Internet Information Services (IIS)** com CGI ativado. Consulte o tópico *[Perguntas Frequentes](EPMProcessorSuporte.md#perguntas-frequentes)* para mais informações
 + **EPM Server** 3.6 ou superior
 + **EPM Webserver** 1.0 ou superior. Consulte o tópico *[Instalação](EPMWebserver.md)* para mais informações
