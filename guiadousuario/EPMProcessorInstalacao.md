@@ -90,11 +90,9 @@ As opções disponíveis no menu contextual da figura anterior estão descritas 
 
 ### Configurações
 
-Para abrir as configurações do **EPM Processor Manager**, selecione a opção *Settings* do menu contextual, conforme a figura a seguir.
+Para abrir as configurações do **EPM Processor Manager**, selecione a opção *Settings* do menu contextual.
 
-![Manager Settings](./images/instalacao_manager_general_settings.png "Janela Settings")
-
-As opções disponíveis na aba **General** da janela da figura anterior estão descritas na tabela a seguir.
+As opções disponíveis na aba **General** estão descritas na tabela a seguir.
 
 |Campo|Descrição|
 |---|---|
