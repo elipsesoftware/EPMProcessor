@@ -119,8 +119,8 @@ As opções disponíveis na aba **Manager** estão descritas na tabela a seguir.
 |**Password**|Senha da conta de e-mail|
 |**Port**|Porta TCP/IP do servidor SMTP|
 |**SSL**|Indica se o servidor SMTP utiliza SSL (*Secure Sockets Layer*)|
-|**From**|Endereço de e-mail do remetente|
-|**To**|Endereço de e-mail do destinatário|
+|**From**|Endereço de e-mail do remetente. Aceita apenas um remetente|
+|**To**|Endereço de e-mail do destinatário. Aceita múltiplos destinatários, separados por ";"|
 
 > + Se a opção **Send an email** estiver selecionada e acontecer alguma falha ativa, um e-mail é enviado 10 minutos após a inicialização do **EPM Processor Manager**. Uma nova verificação e envio são realizados a cada 24 horas. Em caso de falha no envio do e-mail, mais três tentativas são realizadas em um intervalo de 10 minutos.
 
