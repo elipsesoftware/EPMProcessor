@@ -13,7 +13,7 @@ Os **Resources** são acessíveis também pela API, permitindo ações de escrit
 Para acessar esta estrutura, siga estes procedimentos.
 
 1. No menu lateral, clique em **Resources**.
-2. Navegue pela estrutura utilizando a opçao ![expand](./images/fa_chevron_icon.png "Expandir").
+2. Navegue pela estrutura utilizando a opção ![expand](./images/fa_chevron_icon.png "Expandir").
 
 As opções de arquivos e diretórios estão descritas na tabela a seguir.
 
