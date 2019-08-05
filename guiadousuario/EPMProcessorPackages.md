@@ -16,7 +16,7 @@ A tabela a seguir mostra a função de cada uma das opções da tabela de visual
 |![share icon](./images/fa_sharesquare_icon_18.png "Exportar")|Exporta o **Package** no formato **JSON**|
 |![trash icon](./images/fa_trash_icon_18.png "Excluir")|Exclui o **Package**|
 
-Para visualizar um **Package** específico, clique em ![pencil icon](./images/fa_pencil_icon_18.PNG "Visualizar") para abrir uma tabela com os métodos e seus respectivos parâmetros do **Package**, conforme a figura a seguir.
+Para visualizar um **Package** específico, clique em ![pencil icon](./images/fa_pencil_icon_18.png "Visualizar") para abrir uma tabela com os métodos e seus respectivos parâmetros do **Package**, conforme a figura a seguir.
 
 ![imagem menu package](./images/pacckages_menu_package.PNG "Opções para Packages")
 
