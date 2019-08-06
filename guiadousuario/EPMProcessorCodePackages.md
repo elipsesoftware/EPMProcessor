@@ -117,21 +117,31 @@ Recomenda-se utilizar a sintaxe **reStructuredText**, padrão seguido na maioria
 
 A sintaxe básica para a documentação está descrita a seguir.
 
-    """ **Título do método**
-
-    Descrição do método.
-        :param1 : descrição do parâmetro
-        :type param1: tipo de dado requerido pelo parâmetro
-        :returns: descrição do retorno do método
-        :rtype: tipo de dado de retorno do método
-        :raises: em caso de exceções
-
+    """
+    **Título**
+    
+    :param1: descrição do parâmetro
+    :type param1: tipo de dado requerido pelo parâmetro
+    :returns: descrição do retorno do método
+    :rtype: tipo de dado de retorno do método
+    :raises: em caso de exceções
+    
     .. note::
         Nota de rodapé.
-
-    .. todo::
-        funções previstas mas ainda não implementadas no método.
-
+    
+    
+    - Lista 1
+    - Lista 2
+    
+    1. lista numérica 1
+    2. lista numérica 2
+    
+    :Authors:
+        John,
+        David
+    
+    :Version: 1.0 em 2019/08/08
+    
     """
 
 > + Para consultar a documentação completa, acesse a *[página oficial da sintaxe](http://docutils.sourceforge.net/rst.html)*.
