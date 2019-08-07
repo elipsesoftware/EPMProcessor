@@ -68,6 +68,7 @@ Execute o procedimento de _upgrade_ de forma planejada, pois durante este proces
 
 É recomendável realizar backups periódicos do sistema. O EPM Processor dispõe de uma ferramenta CLI (linha de comando) para backup e restauração de todos os itens do EPM Processor.
 Acesse a ferramenta no diretório: %PROGRAMFILES64%\Elipse Software\EpmProcessor\Tools\Backup
+
 1-	Para gerar o backup, execute via prompt de comando, alterando para o diretório escolhido:
 $ epmprocbackup.exe --backup “i:\temp”
 
