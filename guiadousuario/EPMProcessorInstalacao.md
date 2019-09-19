@@ -64,6 +64,21 @@ Antes de instalar uma nova versão, execute a desinstalação da versão anterio
 
 Execute o procedimento de _upgrade_ de forma planejada, pois durante este processo nenhuma **Solution** pode ser executada.
 
+## Backups e restaurações
+
+É recomendável realizar backups periódicos do sistema. O EPM Processor dispõe de uma ferramenta CLI (linha de comando) para backup e restauração de todos os itens do EPM Processor.
+Acesse a ferramenta no diretório: %PROGRAMFILES64%\Elipse Software\EpmProcessor\Tools\Backup
+
+1-	Para gerar o backup, execute via prompt de comando, alterando para o diretório escolhido:
+$ epmprocbackup.exe --backup “i:\temp”
+
+2-	Para fazer a restauração, alterando para o diretório onde se encontra o arquivo .bpr:
+$ epmprocbackup.exe --restore “i:\temp\EpmProcBackup_201908081500.bpr”
+
+3-	Para ajuda nos commandos:
+$ epmprocbackup.exe --help
+
+
 ## Desinstalação
 
 Execute a desinstalação do **EPM Processor** via Painel de Controle do Windows.

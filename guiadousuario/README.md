@@ -26,7 +26,7 @@
 
 ## [Bibliotecas de Terceiros](EPMProcessorThirdparty.md)
 
-## [Terminologia](EpmProcessorTerminologia.md)
+## [Terminologia](EPMProcessorTerminologia.md)
 
 ## [Apêndice A - Agregações](Agregacoes.md)
 

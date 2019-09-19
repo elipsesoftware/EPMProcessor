@@ -22,7 +22,7 @@ Para criar uma nova **Solution**, siga estes procedimentos.
 
 1. Clique em **New**.
 2. Digite um nome e uma descrição para a **Solution**.
-3. Para editar a **Solution**, clique em ![pencil icon](./images/fa_pencil_icon_18.PNG "Editar").
+3. Para editar a **Solution**, clique em ![pencil icon](./images/fa_pencil_icon_18.png "Editar").
 
 As opções de edição de uma **Solution** são **Edit**, **Delete** e **Permissions**. Estas opções são as mesmas de uma **Application**.
 
@@ -87,7 +87,7 @@ Preencha os campos conforme a necessidade e clique em **Save**.
 
 ### Visualizando e Editando Productions
 
-Para visualizar e editar **Productions**, clique em **Solutions** no menu lateral e clique em ![pencil icon](./images/fa_pencil_icon_18.PNG "Editar") para abrir uma **Solution**. Na seção **Productions**, clique em **View All**. A tabela a seguir contém a descrição das opções disponíveis para **Productions**.
+Para visualizar e editar **Productions**, clique em **Solutions** no menu lateral e clique em ![pencil icon](./images/fa_pencil_icon_18.png "Editar") para abrir uma **Solution**. Na seção **Productions**, clique em **View All**. A tabela a seguir contém a descrição das opções disponíveis para **Productions**.
 
 |Opção|Descrição|
 |:---:|---|
