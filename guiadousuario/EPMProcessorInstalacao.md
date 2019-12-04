@@ -8,10 +8,10 @@
 + **Windows Server 2008 R2 SP1** ou superior
 + **Framework .NET** 4.7.2 ou superior
 + **Internet Information Services (IIS)** com CGI ativado. Consulte o tópico *[Perguntas Frequentes](EPMProcessorSuporte.md#perguntas-frequentes)* para mais informações
-+ **EPM Server** 3.6 ou superior
-+ **EPM Webserver** 1.0 ou superior. Consulte o tópico *[Instalação](EPMWebserver.md)* para mais informações
++ **EPM Server** 3.12 ou superior
++ **EPM Webserver** 3.12 ou superior. Consulte o tópico *[Instalação](EPMWebserver.md)* para mais informações
 + Navegadores **Firefox** ou **Chrome**
-+ **Python** 3.6 x64, instalado com a opção **Install for all users**
++ **Python 3.6 ou superior x64**, instalado com a opção **Install for all users**
   + Instalação da distribuição *[Anaconda](Anaconda.md)*, que inclui o **Python** e diversos pacotes
   + Instalação somente do interpretador do *[Python](Python.md)*
   + As bibliotecas são instaladas automaticamente via **Pypi**. Se a máquina estiver *offline*,
@@ -45,7 +45,7 @@ O **EPM Processor** necessita de uma versão 3.6 x64 ou superior do interpretado
 5. Selecione o diretório de instalação do **EPM Processor**.
 5. Selecione o diretório de instalação do **MongoDB**.
 6. Informe ao instalador o diretório de instalação do **Python**.
-7. Aguarde o término da instalação.
+7. Mantenha a opção relacionada ao IIS ativada, para que o instalador configure automaticamente o webserver. Caso opte por utilizar outro webserver (Apache, Nginx), é preciso configurá-lo manualmente.
 
 > + Todos os registros e configurações do **EPM Processor** são salvos no **MongoDB**. Execute _backups_ periódicos para evitar a perda da aplicação em caso de problemas físicos no servidor ou erros de procedimento com arquivos, tais como exclusões, alterações, etc.
 
