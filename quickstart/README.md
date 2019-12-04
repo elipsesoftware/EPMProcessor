@@ -1,8 +1,8 @@
 # Guia Rápido de Utilização do EPM Processor
 
-Data: 02/10/2018
+Data: 04/12/2019
 
-Versão: 0.1
+Versão: 1.0
 
 ## Introdução
 
@@ -20,23 +20,24 @@ O objetivo deste guia é mostrar como criar e executar um algoritmo simples. Con
 
 + **Windows 7 SP1** ou superior x64
 + **Windows Server 2008 R2** ou superior x64
-+ **Framework .NET** 4.7.1 ou superior
++ **Framework .NET** 4.7.2 ou superior
 + **Internet Information Services (IIS)** com CGI ativado. Veja como ativar [aqui](https://github.com/elipsesoftware/epmprocessor/blob/master/guiadousuario/EPMProcessorSuporte.md#como-ativar-o-cgi-no-iis-internet-information-services).
-+ **EPM Server** 3.6 ou superior
-+ **EPM Webserver** 3.6 ou superior instalado e configurado (*[Consulte o Guia de Instalação](EPMWebserver.md)*)
-+ **Python 3.6** x64 instalado com a opção *Install for all users* (recomenda-se a instalação da distribuição *[Anaconda](Anaconda.md)*)
++ **EPM Server** 3.12 ou superior
++ **EPM Webserver** 3.12 ou superior instalado e configurado (*[Consulte o Guia de Instalação](EPMWebserver.md)*)
++ **Python 3.6 ou superior** x64 instalado com a opção *Install for all users*. 
 + Navegador **Firefox** ou **Chrome**
 + 1.5 GB de espaço em disco para o *download* e instalação
 
 ### Instalação
 
 1. Execute o *download* do **EPM Processor** no *[site da Elipse Software](https://www.elipse.com.br/downloads)*.
-2. Execute o instalador como Administrador do Sistema. Para isto, clique com o botão direito do mouse no arquivo de instalação e selecione a opção **Executar como Administrador**.
+2. Execute o instalador. 
 3. Leia e aceite os termos de uso.
 4. Clique em **Install**.
 5. Selecione o diretório de instalação do **EPM Processor** e clique em **Next**.
 6. Selecione o diretório de instalação do **MongoDB** e clique em **Next**. Recomenda-se manter o diretório padrão.
-4. Informe o diretório de instalação do **Python 3.6 x64**. Clique em **Next** e aguarde o fim da instalação.
+4. Informe o diretório de instalação do **Python**. Clique em **Next**.
+5. Mantenha a opção relacionada ao IIS ativada, para que o instalador configure automaticamente o webserver. Caso opte por utilizar outro webserver (Apache, Nginx), é preciso configurá-lo manualmente. 
 
 ### Configuração do EPM Processor Manager
 
