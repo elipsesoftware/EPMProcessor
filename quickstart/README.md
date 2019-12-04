@@ -2,7 +2,7 @@
 
 Data: 04/12/2019
 
-Versão: 1.0
+Versão do EPM Procesor: 1.4
 
 ## Introdução
 
