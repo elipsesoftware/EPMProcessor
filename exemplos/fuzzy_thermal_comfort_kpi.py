@@ -33,7 +33,7 @@ __docformat__ = 'reStructuredText'
 
 @epr.applicationMethod('thermal_comfort_kpi') 
 def kpi_fuzzy_model(session:ScopeSession, tag_temperature: BasicVariable, tag_humidity: BasicVariable,
-        tag_kpi: BasicVariable, server_repository:epmconnection, file_model: str='my_repository/models/kpi_fuzzy_fodel.pkl',
+        tag_kpi: BasicVariable, server_repository:epmconnection, file_model: str='my_repository/models/kpi_fuzzy_model.pkl',
         person_set:str='normal') -> ScopeResult:
     """
 Modelo baseado em lógica fuzzy para o cálculo de um indicador de conforto térmico.
