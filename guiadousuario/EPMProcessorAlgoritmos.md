@@ -296,9 +296,10 @@ def resource_access(session, epmconnection):
 
     resource_manager = epmconnection.getProcessorResourcesManager()
     image_resource = resource_manager.getResource('folder/image.png')
-    image = image_resource.download(epm.DownloadType.Binary)   
+    image = image_resource.download('Binary')   
 
 ```
+Os tipos disponíveis para o método download são: Binary, Text e Json.
 
 #### Upload de Imagem para uma Pasta do EPM Portal
 
