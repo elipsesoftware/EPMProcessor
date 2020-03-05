@@ -10,7 +10,7 @@ EPM Processor Version: 1.4
 
 With this tool it is possible to manage the entire generation of information based on the process data, incorporating information from other data sources, all in a safe and easy to maintain environment, vital requirements for the management of business information.
 
-The purpose of this guide is to show you how to create and execute a simple algorithm. See the [**EPM Processor User Guide **] (https://github.com/elipsesoftware/epmprocessor/tree/master/guiadousuario) for a more complete and detailed approach to all platform functionality. *Portuguese only*
+The purpose of this guide is to show you how to create and execute a simple algorithm. See the [**EPM Processor User Guide **](https://github.com/elipsesoftware/epmprocessor/tree/master/guiadousuario) for a more complete and detailed approach to all platform functionality. *Portuguese only*
 
 ## Install and Configuration
 
