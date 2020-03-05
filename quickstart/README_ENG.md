@@ -1,7 +1,5 @@
 # EPM Processor Quickstart Guide
 
-Data: 2020/03/06
-
 EPM Processor Version: 1.4
 
 ## Intro
