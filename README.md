@@ -6,7 +6,7 @@ O **EPM Processor** é o módulo do **Elipse Plant Manager** reponsável pela ex
 
   * [Guia Rápido de Utilização](quickstart/README.md) - Guia para entender os procedimentos para se inserir um algoritmo e colocá-lo em produção.
   * [Guia do Usuário](guiadousuario/README.md) - Guia completo para explorar todos os aspectos da ferramenta.
-  * [Série de Vídeos](https://youtu.be/A1BF0tg71l8) - Série de vídeos sobre o EPM Processor.
+  * [Série de Vídeos](https://www.youtube.com/playlist?list=PLoCAWpTf0fzV9oC8JXTKmzjxICoVoYOK-) - Série de vídeos sobre o EPM Processor.
 
 * Exemplos
 
