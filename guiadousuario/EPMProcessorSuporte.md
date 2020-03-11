@@ -32,24 +32,34 @@ Selecione a opção **CGI**, conforme mostrado na figura a seguir.
 
 ### Quais são as bibliotecas Python necessárias para o EPM Processor?
 
-+ click >= 6.7
-+ Flask >= 0.12
-+ itsdangerous >= 0.24
-+ Jinja2 >= 2.9.5
-+ linecache2 >= 1.0.0
-+ MarkupSafe >= 1.0
-+ numpy >= 1.13
-+ pymongo >= 3.3.0
-+ python-dateutil >= 2.6.0
-+ requests >= 2.13.0
-+ six >= 1.10.0
-+ traceback2 >= 1.4.0
-+ Werkzeug >= 0.12.1
-+ pypiwin32
-+ requests_toolbelt
-+ cython
-+ pebble
-+ pycryptodome
++ certifi==2019.11.28
++ chardet==3.0.4
++ click==7.1.1
++ Cython==0.29.15
++ Flask==1.1.1
++ Flask-Cors==3.0.8
++ idna==2.9
++ itsdangerous==1.1.0
++ Jinja2==2.11.1
++ linecache2==1.0.0
++ MarkupSafe==1.1.1
++ numpy==1.18.1
++ Pebble==4.5.1
++ pip==19.2.3
++ pycryptodome==3.9.7
++ pymongo==3.10.1
++ pypiwin32==223
++ python-dateutil==2.8.1
++ pywin32==227
++ requests==2.23.0
++ requests-toolbelt==0.9.1
++ setuptools==41.2.0
++ six==1.14.0
++ traceback2==1.4.0
++ urllib3==1.25.8
++ Werkzeug==1.0.0
+
+Caso a máquina não tenha acesso a internet, disponibilizamos os arquivos para instalação offline no diretório **recursos** desse repositório.
 
 ## Obtendo ajuda
 
