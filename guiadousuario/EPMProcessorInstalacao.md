@@ -11,9 +11,8 @@
 + **EPM Server** 3.12 ou superior
 + **EPM Webserver** 3.12 ou superior. Consulte o tópico *[Instalação](EPMWebserver.md)* para mais informações
 + Navegadores **Firefox** ou **Chrome**
-+ **Python 3.6 ou superior x64**, instalado com a opção **Install for all users**
-  + Instalação da distribuição *[Anaconda](Anaconda.md)*, que inclui o **Python** e diversos pacotes
-  + Instalação somente do interpretador do *[Python](Python.md)*
++ **Python 3.6 ou superior x64**, instalado com a opção **Install for all users**  
+  + Instalação do interpretador do *[Python](Python.md)*
   + As bibliotecas são instaladas automaticamente via **Pypi**. Se a máquina estiver *offline*,
   instale manualmente. Consulte o tópico *[Perguntas Frequentes](EPMProcessorSuporte.md#perguntas-frequentes)* para mais informações
 + 1.5 GB de espaço em disco para _download_ e instalação
