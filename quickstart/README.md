@@ -25,6 +25,7 @@ O objetivo deste guia é mostrar como criar e executar um algoritmo simples. Con
 + **EPM Server** 3.12 ou superior
 + **EPM Webserver** 3.12 ou superior instalado e configurado (*[Consulte o Guia de Instalação](EPMWebserver.md)*)
 + **Python 3.6 ou superior** x64 instalado com a opção *Install for all users*. 
+(Não recomendamos a utilização de distribuições Python diferentes da oficial (python.org). Distribuições como Anaconda podem alterar o caminho padrão de alguns arquivos, causando o não funcionamento do EPM Processor.)
 + Navegador **Firefox** ou **Chrome**
 + 1.5 GB de espaço em disco para o *download* e instalação
 
