@@ -12,6 +12,9 @@
 + **EPM Webserver** 3.12 ou superior. Consulte o tópico *[Instalação](EPMWebserver.md)* para mais informações
 + Navegadores **Firefox** ou **Chrome**
 + **Python 3.6 ou superior x64**, instalado com a opção **Install for all users**  
+
+(Não recomendamos a utilização de distribuições Python diferentes da oficial (python.org). Distribuições como Anaconda podem alterar o caminho padrão de alguns arquivos, causando o não funcionamento do EPM Processor.)
+
   + Instalação do interpretador do *[Python](Python.md)*
   + As bibliotecas são instaladas automaticamente via **Pypi**. Se a máquina estiver *offline*,
   instale manualmente. Consulte o tópico *[Perguntas Frequentes](EPMProcessorSuporte.md#perguntas-frequentes)* para mais informações
