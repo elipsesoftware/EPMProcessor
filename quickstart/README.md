@@ -24,7 +24,7 @@ O objetivo deste guia é mostrar como criar e executar um algoritmo simples. Con
 + **Internet Information Services (IIS)** com CGI ativado. Veja como ativar [aqui](https://github.com/elipsesoftware/epmprocessor/blob/master/guiadousuario/EPMProcessorSuporte.md#como-ativar-o-cgi-no-iis-internet-information-services).
 + **EPM Server** 3.12 ou superior
 + **EPM Webserver** 3.12 ou superior instalado e configurado (*[Consulte o Guia de Instalação](EPMWebserver.md)*)
-+ **Python 3.7 x64, baixado do site python.org, instalado com a opção *Install for all users* e inserido no PATH do Windows*. 
++ **Python 3.7 x64, baixado do site python.org, instalado com a opção *Install for all users* e inserido no PATH do Windows**. 
 (Não recomendamos a utilização de distribuições Python diferentes da oficial (python.org). Distribuições como Anaconda ou a versão da Windows Store podem alterar o caminho padrão de alguns arquivos, causando o não funcionamento do EPM Processor.)
 + Navegador **Firefox** ou **Chrome**
 + 1.5 GB de espaço em disco para o *download* e instalação
