@@ -2,7 +2,7 @@
 
 Data: 02/10/2018
 
-Versão: 0.1
+Versão: 1.0
 
 ## Introdução
 
