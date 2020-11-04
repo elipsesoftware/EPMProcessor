@@ -8,7 +8,7 @@ Versão: 0.1
 
 O **EPM Webserver** é um módulo do sistema **EPM** que provê acesso a um **EPM Server** através de uma API **RESTful**.
 
-Este módulo é pré-requisito para os módulos **EPM Portal** e **EPM Processor** do sistema **EPM**.
+Este módulo é pré-requisito para os módulos **EPM Portal** , **EPM Processor**  e **EPMWebapi Python**do sistema **EPM**.
 
 ## Pré-requisitos
 
