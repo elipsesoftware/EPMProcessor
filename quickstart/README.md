@@ -21,9 +21,8 @@ O objetivo deste guia é mostrar como criar e executar um algoritmo simples. Con
 + **Windows 7 SP1** ou superior x64
 + **Windows Server 2008 R2** ou superior x64
 + **Framework .NET** 4.7.2 ou superior
-+ **Internet Information Services (IIS)** com CGI ativado. Veja como ativar [aqui](https://github.com/elipsesoftware/epmprocessor/blob/master/guiadousuario/EPMProcessorSuporte.md#como-ativar-o-cgi-no-iis-internet-information-services).
-+ **EPM Server** 3.12 ou superior
-+ **EPM Webserver** 3.12 ou superior instalado e configurado (*[Consulte o Guia de Instalação](EPMWebserver.md)*)
++ **EPM Server** 3.16 ou superior
++ **EPM Webserver** 4.0 ou superior instalado e configurado (*[Consulte o Guia de Instalação](EPMWebserver.md)*)
 + **Python 3.7 x64, baixado do site python.org, instalado com a opção *Install for all users* e inserido no PATH do Windows**. 
 (Não recomendamos a utilização de distribuições Python diferentes da oficial (python.org). Distribuições como Anaconda ou a versão da Windows Store podem alterar o caminho padrão de alguns arquivos, causando o não funcionamento do EPM Processor.)
 + Navegador **Firefox** ou **Chrome**
@@ -38,7 +37,7 @@ O objetivo deste guia é mostrar como criar e executar um algoritmo simples. Con
 5. Selecione o diretório de instalação do **EPM Processor** e clique em **Next**.
 6. Selecione o diretório de instalação do **MongoDB** e clique em **Next**. Recomenda-se manter o diretório padrão.
 4. Informe o diretório de instalação do **Python**. Clique em **Next**.
-5. Mantenha a opção relacionada ao IIS ativada, para que o instalador configure automaticamente o webserver. Caso opte por utilizar outro webserver (Apache, Nginx), é preciso configurá-lo manualmente. 
+
 
 ### Configuração do EPM Processor Manager
 
