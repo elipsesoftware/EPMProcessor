@@ -7,9 +7,8 @@
 + **Windows 7 SP1** ou superior x64
 + **Windows Server 2008 R2 SP1** ou superior
 + **Framework .NET** 4.7.2 ou superior
-+ **Internet Information Services (IIS)** com CGI ativado. Consulte o tópico *[Perguntas Frequentes](EPMProcessorSuporte.md#perguntas-frequentes)* para mais informações
 + **EPM Server** 3.12 ou superior
-+ **EPM Webserver** 3.12 ou superior. Consulte o tópico *[Instalação](EPMWebserver.md)* para mais informações
++ **EPM Webserver** 4.0 ou superior. Consulte o tópico *[Instalação](EPMWebserver.md)* para mais informações
 + Navegadores **Firefox** ou **Chrome**
 + **Python 3.7 x64, baixado do site python.org, instalado com a opção *Install for all users* e inserido no PATH do Windows**. 
 (Não recomendamos a utilização de distribuições Python diferentes da oficial (python.org). Distribuições como Anaconda ou a versão da Windows Store, podem alterar o caminho padrão de alguns arquivos, causando o não funcionamento do EPM Processor.)
