@@ -33,7 +33,6 @@ Execute o _download_ no site da **Elipse Software**, na seção do produto *[Eli
 
 O **EPM Processor** necessita de uma versão 3.6 x64 ou superior do interpretador **Python** padrão (**CPython**). Recomenda-se os seguintes cuidados:
 
-+ Em ambientes de desenvolvimento, instale a distribuição *[Anaconda](Anaconda.md)*, pois esta distribuição possui todas as principais bibliotecas para projetos de ciência de dados.
 + Em ambientes de produção, instale o interpretador disponível em *[Python.org](https://www.python.org/)* e instale somente as bibliotecas utilizadas no projeto.
 
 ## Instalação
@@ -45,7 +44,7 @@ O **EPM Processor** necessita de uma versão 3.6 x64 ou superior do interpretado
 5. Selecione o diretório de instalação do **EPM Processor**.
 5. Selecione o diretório de instalação do **MongoDB**.
 6. Informe ao instalador o diretório de instalação do **Python**.
-7. Mantenha a opção relacionada ao IIS ativada, para que o instalador configure automaticamente o webserver. Caso opte por utilizar outro webserver (Apache, Nginx), é preciso configurá-lo manualmente.
+
 
 > + Todos os registros e configurações do **EPM Processor** são salvos no **MongoDB**. Execute _backups_ periódicos para evitar a perda da aplicação em caso de problemas físicos no servidor ou erros de procedimento com arquivos, tais como exclusões, alterações, etc.
 
