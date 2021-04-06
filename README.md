@@ -1,6 +1,6 @@
 # EPM Processor
 
-O **EPM Processor** é o módulo do **Elipse Plant Manager** reponsável pela execução de códigos em linguagem **Python**, baseados em eventos simulados ou de tempo real. 
+O **EPM Processor** é o módulo do **Elipse Plant Manager** responsável pela execução de códigos em linguagem **Python**, baseados em eventos simulados ou de tempo real. 
 
 * Documentação
 
