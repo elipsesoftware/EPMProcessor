@@ -18,7 +18,7 @@ def history_update(session, epmdataobject):
     newdates = np.array([base + datetime.timedelta(hours=i) for i in range(5)])
 
     # epm ndarray data format.
-    desc = np.dtype([('Value', '>f8'), ('Timestamp', 'object'), ('Quality', '>i4')])
+    desc = np.dtype([('Value', '>f8'), ('Timestamp', 'object'), ('Quality', 'object')])
     datatemp = np.empty(len(newvalues), dtype=desc)
 
     #loop to populate the object before send to EPM
