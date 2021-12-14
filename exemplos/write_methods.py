@@ -14,7 +14,7 @@ def history_update(session, epmdataobject):
 
     #just a five itens list
     newvalues = [50,60,30,40,10]
-    base = datatime.datetime(2018,1,1)
+    base = datetime.datetime(2018,1,1)
     newdates = np.array([base + datetime.timedelta(hours=i) for i in range(5)])
 
     # epm ndarray data format.
