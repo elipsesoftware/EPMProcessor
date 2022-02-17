@@ -1,6 +1,6 @@
 import epmprocessor as epr
 import epmwebapi as epm
-
+from epmwebapi.downloadtype import DownloadType
 
 @epr.applicationMethod('GetPortalResource')
 def get_portal_resource(resource_name, connection):
@@ -8,8 +8,8 @@ def get_portal_resource(resource_name, connection):
     Get Portal resource from EPM WebServer
     """
     epmResourceManager = connection.getPortalResourcesManager()
-    file = epmResourceManager.getResource(resource_name)
-
+    resource = epmResourceManager.getResource(resource_name)
+    file = resource.download(DownloadType.Json)
 
 @epr.applicationMethod('GetProcessorResource')
 def get_processor_resource(resource_name, connection):
@@ -18,4 +18,5 @@ def get_processor_resource(resource_name, connection):
     """
     
     epResourceManager = connection.getProcessorResourcesManager()
-    file = epResourceManager.getResource(resource_name)
+    resource = epResourceManager.getResource(resource_name)
+    file = resource.download(DownloadType.Json)
