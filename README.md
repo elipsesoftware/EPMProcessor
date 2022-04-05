@@ -16,6 +16,7 @@ O **EPM Processor** é o módulo do **Elipse Plant Manager** responsável pela e
   * [Contexto de execução](exemplos/scope_context.py) - Alterando o fluxo de execuçaõo do algoritmo de acordo com o contexto em que está sendo executado: Teste, simulação ou produção.
   * [Buscando Resources no EPM Webserver](exemplos/get_resources.py) - Lendo arquivos do EPM webserver para utilizá-los como recurso do algoritmo. 
   * [Lógica Fuzzy](exemplos/fuzzy_thermal_comfort_kpi.py) - Modelo de lógica Fuzzy apresentado nos vídeos do EPM Processor.
+  * [VMN (Vazão Mínima Noturna)](exemplos/vmn.py) - Código para cálculo da Vazão Mínima noturna para a área de Saneamento.
 
 
 
