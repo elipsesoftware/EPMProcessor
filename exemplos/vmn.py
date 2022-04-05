@@ -8,6 +8,7 @@ import datetime
 #-------------------------
 #      Method Sample
 #-------------------------
+
 @epr.applicationMethod('Get_VMN')
 def get_vmn(session, flowMeters):
   today = session.timeEvent
