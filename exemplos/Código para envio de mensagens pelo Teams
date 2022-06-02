@@ -1,0 +1,28 @@
+#mandatory import
+import epmprocessor as epr
+import pymsteams
+
+#-------------------------
+#      Method Sample Teams Message
+#-------------------------
+@epr.applicationMethod('msgDevices')
+def msgDevices(session):
+    if session.eventInfo != None:
+      for key in session.eventInfo.payload:
+        if key.find('Status'):
+          vStatus = int(session.eventInfo.payload[key])
+      if session.eventInfo.instance != None:
+        iName = session.eventInfo.instance.name
+   
+      # You must create the connectorcard object with the Microsoft Webhook URL
+      myTeamsMes-sage = pymsteams.connectorcard("https://elipse365.webhook.office.com/webhookb2/fa97d065-68e3-4e5d-93b2-8a391de7af66@3a66cb32-9647-4d44-8cea-ba22136c58bf/IncomingWebhook/3fcb8c19e51e4a89b731cd8c6bb33c33/37034324-60c8-49f5-88e4-efcbe47fe1a9")
+
+      # Add text to the message.
+      # myTeamsMessage.text("Alarme atuado "+ props['DisplayName'].read().value)
+      opStatusList = ['OffLine', 'Active','Planned','Staged','Failed','Inventory']
+      myTeamsMessa-ge.text("Dispositivo "+ iName.replace('1:','') +" alterou seu estado para "+ opStatusList[vStatus])
+
+      # send the message.
+      myTeamsMessage.send()
+
+    return epr.ScopeResult(True)
