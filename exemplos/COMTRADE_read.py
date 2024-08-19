@@ -29,7 +29,6 @@ def method_name(epmConn, FileAddress = ''):
 
     invChar = ['<','>','$','#','.',',',' ','´','@','/']
 
-
     newdate = rec.start_timestamp
     if newdate > dt.datetime(1970, 1, 1):
             
