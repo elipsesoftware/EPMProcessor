@@ -8,8 +8,17 @@ import glob
 @epr.applicationMethod('Read COMTRADE File')
 def method_name(epmConn, FileAddress = ''):
   '''
-  epmConn = EPM connection
-  FileAddress = COMTRADE files path like "D:\COMTRADE\Files\"
+  This code was made to run into EPM Processor, read COMTRADE files from an informed path and save data to Basic Variables.
+  It creates the tags if they don't exist, add an annotation to identify the start time of each COMTRADE sequence and a last value with bad quality to prevent connecting different sequences.
+  Params:
+    - epmConn = EPM connection
+    - FileAddress = COMTRADE files path like "D:\COMTRADE\Files\"
+
+  How to use:
+    - Download this file and import to a code package in your EPM Processor.
+    - Deploy your code package.
+    - Create an Application to call this method "Read COMTRADE File" informing the parameters like the example.
+    - Configure a solution to run the code when you want.
   '''
 
   comtradelist = [f for f in glob.glob(FileAddress + "*.cfg")]
