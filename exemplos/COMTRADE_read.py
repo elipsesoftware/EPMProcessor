@@ -69,6 +69,7 @@ def method_name(epmConn, FileAddress = ''):
             datatemp['Value'] = newvalues
             datatemp['Timestamp'] = newdates
             datatemp['Quality'] = 0
+            datatemp['Quality'][-1] = 2156724224
             newBV.historyUpdate(datatemp)
             
             #escrevendo anotação
@@ -106,6 +107,7 @@ def method_name(epmConn, FileAddress = ''):
             datatemp['Value'] = newvalues
             datatemp['Timestamp'] = newdates
             datatemp['Quality'] = 0
+            datatemp['Quality'][-1] = 2156724224
             newBV.historyUpdate(datatemp)
 
             #escrevendo anotação
