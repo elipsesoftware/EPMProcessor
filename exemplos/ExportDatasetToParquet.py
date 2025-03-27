@@ -9,7 +9,7 @@ def ExportParquet(epmConnection, dsName, saveTo = 'C:/'):
   Parameters:
     - epmConnection: EPM Connection
     - dsName: Dataset name from where data will be obtained
-    - sabeTo: Path to save Parquet file (can be a OneDrive path, for example)
+    - sabeTo: Path to save Parquet file (can be a OneDrive path, for example). It needs to be informed with slashes (Ex: C:/MyFolder).
   '''
   dsConfig = epmConnection.loadDatasetServer(dsName)
   datavar = dsConfig.execute()
